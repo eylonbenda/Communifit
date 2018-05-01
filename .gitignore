@@ -1,0 +1,14 @@
+.DS_Store
+build
+Final_Project.xcworkspace/xcshareddata/IDEWorkspaceChecks.plist
+Final_Project.xcodeproj/project.xcworkspace/xcuserdata/*
+Final_Project.xcodeproj/xcuserdata/*
+Final_Project.xcworkspace/xcuserdata/*
+Build/
+DerivedData/
+DerivedData2/
+DerivedData3/
+index/
+ModuleCache/
+Logs/
+info.plist
