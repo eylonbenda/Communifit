@@ -258,9 +258,9 @@
 				846254C5208F7C4500942B6A /* NewsFeedTableVC.swift */,
 				847FA3B22092248E001D48AC /* CommentsForPost.swift */,
 				847FA3B420922597001D48AC /* CommentsForPostCell.swift */,
+				B7C255142097610B009CCDFC /* plansViewCell.swift */,
 				84ADEA79209343F7005E9CF6 /* CommentsForPostViewController.swift */,
 				B7C2551220975C32009CCDFC /* PlansViewController.swift */,
-				B7C255142097610B009CCDFC /* plansViewCell.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";

@@ -9,7 +9,15 @@
 import UIKit
 
 class plansViewCell: UITableViewCell {
+    
+    
+    
+    @IBOutlet weak var planImage: UIImageView!
+    @IBOutlet weak var planName: UILabel!
+    
 
+    @IBAction func editPlan(_ sender: Any) {
+    }
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

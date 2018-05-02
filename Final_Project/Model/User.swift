@@ -84,7 +84,7 @@ class User {
     func convertMyPlanToJson() -> [String:Any]{
         
         var json = [String:Any]()
-        json["myPlans"] = myPlanToJson(myPlans: myPlans)
+        json = myPlanToJson(myPlans: myPlans)
         return json
         
     }

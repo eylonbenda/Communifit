@@ -769,7 +769,7 @@
                                 </connections>
                             </button>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="LfH-IQ-vwi">
-                                <rect key="frame" x="0.0" y="90" width="375" height="528"/>
+                                <rect key="frame" x="0.0" y="90" width="375" height="472"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
@@ -792,15 +792,33 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AHU-6e-SNi">
-                                                    <rect key="frame" x="322" y="7" width="30" height="30"/>
+                                                    <rect key="frame" x="330" y="8" width="30" height="30"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <state key="normal" title="edit"/>
+                                                    <connections>
+                                                        <action selector="editPlan:" destination="wwy-7k-aH8" eventType="touchUpInside" id="iGt-zv-Tfz"/>
+                                                    </connections>
                                                 </button>
                                             </subviews>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="planImage" destination="un8-pf-D0P" id="cbm-9z-Xrc"/>
+                                            <outlet property="planName" destination="Od1-py-knp" id="tR8-Rd-Bdb"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zSc-Vb-jk8">
+                                <rect key="frame" x="142" y="577" width="90" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.02051808126270771" green="0.98297959566116333" blue="0.92830049991607666" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Exercises">
+                                    <color key="titleShadowColor" cocoaTouchSystemColor="darkTextColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="viewExercises:" destination="6T5-yZ-ot7" eventType="touchUpInside" id="0sK-y8-qu7"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="IHS-A3-l0w"/>
@@ -810,6 +828,7 @@
                         <outlet property="input" destination="6Bh-99-J7Q" id="BqS-mt-CNo"/>
                         <outlet property="plansTable" destination="LfH-IQ-vwi" id="m52-nz-fUo"/>
                         <segue destination="fo2-RD-jvz" kind="show" identifier="goToExercise" id="Lyf-LC-kH7"/>
+                        <segue destination="fo2-RD-jvz" kind="show" identifier="goToExercises" id="MwB-de-iUv"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="e6q-bv-gwf" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -1237,7 +1256,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Omn-kO-rHJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4396" y="483.50824587706148"/>
+            <point key="canvasLocation" x="4441" y="359"/>
         </scene>
         <!--Feed-->
         <scene sceneID="SZ4-M5-gmx">
@@ -1294,5 +1313,6 @@
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="d1d-k5-lu0"/>
+        <segue reference="MwB-de-iUv"/>
     </inferredMetricsTieBreakers>
 </document>

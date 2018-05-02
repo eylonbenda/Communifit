@@ -29,7 +29,13 @@ class FeedTable: UITableViewController , UIImagePickerControllerDelegate , UINav
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        
+        let uid = Auth.auth().currentUser?.uid
+        Model.instance.getUser(uid: uid!, callback: { (user) in
+            self.currentUser = user
+            print("========================================")
+            print (self.currentUser?.userName)
+            ModelNotification.user.post(data: self.currentUser!)
+        })
        
         
         configureTableView()
@@ -56,10 +62,15 @@ class FeedTable: UITableViewController , UIImagePickerControllerDelegate , UINav
         
         if Auth.auth().currentUser != nil {
             // User is signed in.
-            let uid = Auth.auth().currentUser?.uid
-            Model.instance.getUser(uid: uid!, callback: { (user) in
-                self.currentUser = user
-            })
+//            let uid = Auth.auth().currentUser?.uid
+//            Model.instance.getUser(uid: uid!, callback: { (user) in
+//                self.currentUser = user
+//                var secondTab = self.tabBarController?.viewControllers[3] as PlansViewController
+//                secondTab.curre = firstArray
+//            })
+            
+            
+            
            
             
         } else {

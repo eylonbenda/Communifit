@@ -15,32 +15,36 @@ class PlansViewController: UIViewController ,  UITableViewDelegate , UITableView
     @IBOutlet weak var plansTable: UITableView!
     @IBOutlet weak var input: UITextField!
     var currentUser : User?
+    var planArr = [Plan]()
     
-    
-    @IBAction func addPlan(_ sender: Any) {
+    @IBAction func viewExercises(_ sender: Any) {
         
-        let plan = Plan(planName: input.text!)
-        let uid = Auth.auth().currentUser?.uid
-        Model.instance.getUser(uid: uid!) { (user) in
-            self.currentUser = user
-            self.currentUser?.myPlans.append(plan)
-            Model.instance.addPlanToUser(user: self.currentUser!)
-        }
-        
-       
-        
-        
-        performSegue(withIdentifier: "goToExercise", sender: self)
+        performSegue(withIdentifier: "goToExercises", sender: self)
         
     }
     
+    @IBAction func addPlan(_ sender: Any) {
+        
+        if input.text != nil && input.text != "" {
+        let plan = Plan(planName: input.text!)
+        self.currentUser?.myPlans.append(plan)
+        Model.instance.addPlanToUser(user: self.currentUser!)
+        performSegue(withIdentifier: "goToExercise", sender: self)
+        }
+        else {}
+        // TODO pormpt alert of empty name
+    }
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 1
+        return planArr.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         let cell = tableView.dequeueReusableCell(withIdentifier: "planCell", for: indexPath) as! plansViewCell
+        let plan = currentUser?.myPlans[indexPath.row]
+        cell.planName.text = plan?.planName
+        
         
         return cell
     }
@@ -50,6 +54,37 @@ class PlansViewController: UIViewController ,  UITableViewDelegate , UITableView
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+   
+//        let uid = Auth.auth().currentUser?.uid
+//        Model.instance.getUser(uid: uid!) { (user) in
+//        self.currentUser = user
+//            print(self.currentUser?.userName)
+    
+//
+//        }
+        plansTable.delegate = self
+        plansTable.dataSource = self
+        print("*************************************")
+
+        ModelNotification.user.observe { (user) in
+            if user != nil {
+                self.currentUser = user
+                self.planArr = (self.currentUser?.myPlans)!
+                print(self.currentUser?.userName)
+                self.plansTable.reloadData()
+            }
+        }
+       
+        
+        
+        
+//        Model.instance.getPlans(user: self.currentUser!) { (plans) in
+//            if plans != nil {
+//            self.planArr = plans
+//            }
+//        }
+        
 
         // Do any additional setup after loading the view.
     }

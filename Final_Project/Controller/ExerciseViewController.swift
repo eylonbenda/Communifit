@@ -23,6 +23,10 @@ class ExerciseViewController: UIViewController {
     override func viewDidLoad() {
         
         super.viewDidLoad()
+        let uid = Auth.auth().currentUser?.uid
+        Model.instance.getUser(uid: uid!, callback: {(user) in
+            self.currentUser = user
+        })
         if let exe = exercise {
         execriseName.text = exe.name
         exDesc.text = exe.execDescription
@@ -37,10 +41,7 @@ class ExerciseViewController: UIViewController {
     
     
     @IBAction func addExcercise(_ sender: Any) {
-        if Auth.auth().currentUser != nil {
-            let uid = Auth.auth().currentUser?.uid
-            Model.instance.getUser(uid: uid!, callback: { (user) in
-                self.currentUser = user
+        
                 if self.currentUser?.myPlans == nil {
                     //TODO : 1) Create list of plans
                     //TODO : 2) Add excerise to the plan created
@@ -58,14 +59,10 @@ class ExerciseViewController: UIViewController {
                      
                      */
                 }
-                
-            })
-            
-        } else {
-          
+        
             performSegue(withIdentifier: "goToAuth", sender: self)
             
-        }
+    
         
     }
     

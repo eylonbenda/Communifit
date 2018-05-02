@@ -220,6 +220,15 @@ class Model {
         usermodelFirebase.addTrainPlanToUser(user: user)
     }
     
+    func getPlans (user : User , callback :@escaping ([Plan]?) -> Void){
+        usermodelFirebase.getAllPlans(user: user, callback: callback)
+            
+        }
+    
+    }
+
     
     
-}
+    
+    
+
