@@ -36,7 +36,7 @@ class PlansViewController: UIViewController ,  UITableViewDelegate , UITableView
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return planArr.count
+        return (currentUser?.myPlans.count)!
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -55,38 +55,27 @@ class PlansViewController: UIViewController ,  UITableViewDelegate , UITableView
     override func viewDidLoad() {
         super.viewDidLoad()
         
-   
-//        let uid = Auth.auth().currentUser?.uid
-//        Model.instance.getUser(uid: uid!) { (user) in
-//        self.currentUser = user
-//            print(self.currentUser?.userName)
-    
-//
-//        }
         plansTable.delegate = self
         plansTable.dataSource = self
-        print("*************************************")
-
-        ModelNotification.user.observe { (user) in
-            if user != nil {
-                self.currentUser = user
-                self.planArr = (self.currentUser?.myPlans)!
-                print(self.currentUser?.userName)
+        
+        //TODO : oberve user when a new user have connected
+        
+        ModelNotification.planList.observe { (plans) in
+            
+            if plans != nil {
+                self.currentUser?.myPlans = plans!
                 self.plansTable.reloadData()
             }
         }
-       
         
         
-        
-//        Model.instance.getPlans(user: self.currentUser!) { (plans) in
-//            if plans != nil {
-//            self.planArr = plans
-//            }
-//        }
         
 
         // Do any additional setup after loading the view.
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        Model.instance.getPlans(user: currentUser!)
     }
 
     override func didReceiveMemoryWarning() {

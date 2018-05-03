@@ -36,6 +36,7 @@ class ModelNotification {
     static let postList = ModelNotificationBase<[Post]>(name: "PostListNotification")
     static let post = ModelNotificationBase<Post>(name:"PostNotification")
     static let commentsList  = ModelNotificationBase<[Comment]>(name:"CommentsListNotification")
+    static let planList = ModelNotificationBase<[Plan]>(name:"PlanListNotification")
     
     
     static func removeObserver(observer:Any){
@@ -91,9 +92,6 @@ class Model {
         postModelFB.getAllCommentsOfPost(uid: post.postID!) { (list) in
             if list != nil {
             ModelNotification.commentsList.post(data: list!)
-            for cmt in list!{
-                print(cmt.content!)
-            }
         }
     }
         
@@ -220,12 +218,14 @@ class Model {
         usermodelFirebase.addTrainPlanToUser(user: user)
     }
     
-    func getPlans (user : User , callback :@escaping ([Plan]?) -> Void){
-        usermodelFirebase.getAllPlans(user: user, callback: callback)
-            
+    func getPlans (user : User ){
+        usermodelFirebase.getAllPlans(user: user) { (plans) in
+            ModelNotification.planList.post(data: plans!)
         }
-    
+            
     }
+    
+}
 
     
     

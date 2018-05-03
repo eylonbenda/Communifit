@@ -29,13 +29,34 @@ class FeedTable: UITableViewController , UIImagePickerControllerDelegate , UINav
     override func viewDidLoad() {
         super.viewDidLoad()
         
+//        let uid = Auth.auth().currentUser?.uid
+//        Model.instance.getUser(uid: uid!, callback: { (user) in
+//            self.currentUser = user
+//            let thirdTab = self.tabBarController?.viewControllers![3] as! UINavigationController
+//            let planTableVC = thirdTab.viewControllers.first as! PlansViewController
+//            planTableVC.currentUser = self.currentUser
+////            ModelNotification.user.post(data: self.currentUser!)
+//        })
+        
         let uid = Auth.auth().currentUser?.uid
         Model.instance.getUser(uid: uid!, callback: { (user) in
+            
             self.currentUser = user
-            print("========================================")
-            print (self.currentUser?.userName)
-            ModelNotification.user.post(data: self.currentUser!)
+            let thirdTab = self.tabBarController?.viewControllers![3] as! UINavigationController
+            let planTableVC = thirdTab.viewControllers.first as! PlansViewController
+            planTableVC.currentUser = self.currentUser
         })
+        
+        ModelNotification.user.observe { (user) in
+            
+            if user != nil {
+                self.currentUser = user
+                let thirdTab = self.tabBarController?.viewControllers![3] as! UINavigationController
+                let planTableVC = thirdTab.viewControllers.first as! PlansViewController
+                planTableVC.currentUser = self.currentUser
+                
+            }
+        }
        
         
         configureTableView()

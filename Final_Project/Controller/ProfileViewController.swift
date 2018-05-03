@@ -64,6 +64,8 @@ class ProfileViewController: UIViewController , UIImagePickerControllerDelegate 
                 self.profileImage.image = profileImage
             })
             
+        } else {
+            profileImage.image = UIImage(named: "avatar 2")
         }
         
     }
