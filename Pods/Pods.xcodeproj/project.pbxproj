@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 48;
+	objectVersion = 46;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -204,72 +204,72 @@
 
 /* Begin PBXFileReference section */
 		00DE703342925F2E0D0C1B6DC6228A42 /* cache.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = cache.h; path = include/leveldb/cache.h; sourceTree = "<group>"; };
-		0214AC6155C75DE3B96B0A486A560901 /* filename.cc */ = {isa = PBXFileReference; includeInIndex = 1; name = filename.cc; path = db/filename.cc; sourceTree = "<group>"; };
-		03889B2BB369FE1458D3539CD5470859 /* testutil.cc */ = {isa = PBXFileReference; includeInIndex = 1; name = testutil.cc; path = util/testutil.cc; sourceTree = "<group>"; };
+		0214AC6155C75DE3B96B0A486A560901 /* filename.cc */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.cpp; name = filename.cc; path = db/filename.cc; sourceTree = "<group>"; };
+		03889B2BB369FE1458D3539CD5470859 /* testutil.cc */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.cpp; name = testutil.cc; path = util/testutil.cc; sourceTree = "<group>"; };
 		0391A5B8CDE0CC59945F22C12D086DC8 /* FirebaseNanoPB.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FirebaseNanoPB.framework; path = Frameworks/FirebaseNanoPB.framework; sourceTree = "<group>"; };
-		046DD007C00F27F2EE2DFA68F4B36274 /* log_writer.cc */ = {isa = PBXFileReference; includeInIndex = 1; name = log_writer.cc; path = db/log_writer.cc; sourceTree = "<group>"; };
+		046DD007C00F27F2EE2DFA68F4B36274 /* log_writer.cc */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.cpp; name = log_writer.cc; path = db/log_writer.cc; sourceTree = "<group>"; };
 		04BE05D9B40E2EA994F65742DC8E7646 /* FirebaseAuth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FirebaseAuth.framework; path = Frameworks/FirebaseAuth.framework; sourceTree = "<group>"; };
-		07830751E3A5AC831B17B346CDFBE04B /* memtable.cc */ = {isa = PBXFileReference; includeInIndex = 1; name = memtable.cc; path = db/memtable.cc; sourceTree = "<group>"; };
+		07830751E3A5AC831B17B346CDFBE04B /* memtable.cc */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.cpp; name = memtable.cc; path = db/memtable.cc; sourceTree = "<group>"; };
 		08331CC4E93389121BD7AEA5CEFEB76B /* Pods-Final_Project.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Final_Project.release.xcconfig"; sourceTree = "<group>"; };
 		0937A9CBFF5E06C6DEA5EC64C4684654 /* posix_logger.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = posix_logger.h; path = util/posix_logger.h; sourceTree = "<group>"; };
-		0AA22F71B9FC297D014E68C965627E6A /* port_posix.cc */ = {isa = PBXFileReference; includeInIndex = 1; name = port_posix.cc; path = port/port_posix.cc; sourceTree = "<group>"; };
+		0AA22F71B9FC297D014E68C965627E6A /* port_posix.cc */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.cpp; name = port_posix.cc; path = port/port_posix.cc; sourceTree = "<group>"; };
 		0CF03B808405D340FE0E81A086346783 /* iterator.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = iterator.h; path = include/leveldb/iterator.h; sourceTree = "<group>"; };
 		0D6E62DAB3B36AA8BF19E717E822B744 /* GTMDefines.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = GTMDefines.h; sourceTree = "<group>"; };
 		0EF6B223B383189835F9FF9114B3C68B /* GoogleToolboxForMac.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = GoogleToolboxForMac.xcconfig; sourceTree = "<group>"; };
-		1129F52E8B2616316F26FA91E901EDFE /* comparator.cc */ = {isa = PBXFileReference; includeInIndex = 1; name = comparator.cc; path = util/comparator.cc; sourceTree = "<group>"; };
+		1129F52E8B2616316F26FA91E901EDFE /* comparator.cc */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.cpp; name = comparator.cc; path = util/comparator.cc; sourceTree = "<group>"; };
 		131CD7D0698BF59D0D8F336EDB030821 /* testharness.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = testharness.h; path = util/testharness.h; sourceTree = "<group>"; };
 		138465C8900D75D9007B38EF86EBEB8D /* iterator_wrapper.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = iterator_wrapper.h; path = table/iterator_wrapper.h; sourceTree = "<group>"; };
-		13B6CF4520BC3831F56AE3179DEFCBBB /* Pods-Final_Project.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-Final_Project.modulemap"; sourceTree = "<group>"; };
-		149C1912825DFE660D8BBE8E7323C060 /* SVProgressHUD.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SVProgressHUD.framework; path = SVProgressHUD.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		14A4CE74BF263809FE73A0A87FDF49A7 /* SVProgressHUD.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = SVProgressHUD.modulemap; sourceTree = "<group>"; };
-		16FE76CE1B1CE4203572007F446FA506 /* pb_common.c */ = {isa = PBXFileReference; includeInIndex = 1; path = pb_common.c; sourceTree = "<group>"; };
-		19028C4B438F6F36FFDBEB32F690B236 /* block_builder.cc */ = {isa = PBXFileReference; includeInIndex = 1; name = block_builder.cc; path = table/block_builder.cc; sourceTree = "<group>"; };
+		13B6CF4520BC3831F56AE3179DEFCBBB /* Pods-Final_Project.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-Final_Project.modulemap"; sourceTree = "<group>"; };
+		149C1912825DFE660D8BBE8E7323C060 /* SVProgressHUD.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SVProgressHUD.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		14A4CE74BF263809FE73A0A87FDF49A7 /* SVProgressHUD.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = SVProgressHUD.modulemap; sourceTree = "<group>"; };
+		16FE76CE1B1CE4203572007F446FA506 /* pb_common.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; path = pb_common.c; sourceTree = "<group>"; };
+		19028C4B438F6F36FFDBEB32F690B236 /* block_builder.cc */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.cpp; name = block_builder.cc; path = table/block_builder.cc; sourceTree = "<group>"; };
 		1C0DE42DA010DD64D0800070596820A4 /* version_set.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = version_set.h; path = db/version_set.h; sourceTree = "<group>"; };
 		1CF700F70EA2A2A83399019F1C8C20B2 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1E2C7DC623D0C1DABE0540F46CD7FD13 /* memtable.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = memtable.h; path = db/memtable.h; sourceTree = "<group>"; };
 		1F4D01D041A32489E4C12B3E6996CE76 /* pb.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = pb.h; sourceTree = "<group>"; };
-		2493FF1E49B4E7D697DCF73799187A7D /* status.cc */ = {isa = PBXFileReference; includeInIndex = 1; name = status.cc; path = util/status.cc; sourceTree = "<group>"; };
+		2493FF1E49B4E7D697DCF73799187A7D /* status.cc */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.cpp; name = status.cc; path = util/status.cc; sourceTree = "<group>"; };
 		25A30357C1BB4E5679C1540EB5D6FFF7 /* Pods-Final_ProjectTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Final_ProjectTests.release.xcconfig"; sourceTree = "<group>"; };
 		2857D85D62378A78D2AFEFFB54E70638 /* port_example.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = port_example.h; path = port/port_example.h; sourceTree = "<group>"; };
-		28DE4F0C651B31AC0D715690C649F0AC /* format.cc */ = {isa = PBXFileReference; includeInIndex = 1; name = format.cc; path = table/format.cc; sourceTree = "<group>"; };
+		28DE4F0C651B31AC0D715690C649F0AC /* format.cc */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.cpp; name = format.cc; path = table/format.cc; sourceTree = "<group>"; };
 		29B9986E0F1A662CB553330E5D9B1B10 /* db_impl.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = db_impl.h; path = db/db_impl.h; sourceTree = "<group>"; };
-		2A5E75F44EA5B15E8DD07294FE6983C8 /* nanopb.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = nanopb.modulemap; sourceTree = "<group>"; };
-		2AA3AB8336F38652FF10CB57D2B9B3C8 /* filter_block.cc */ = {isa = PBXFileReference; includeInIndex = 1; name = filter_block.cc; path = table/filter_block.cc; sourceTree = "<group>"; };
-		2C2256E8131595A4B7B3625BA1AF86D8 /* write_batch.cc */ = {isa = PBXFileReference; includeInIndex = 1; name = write_batch.cc; path = db/write_batch.cc; sourceTree = "<group>"; };
+		2A5E75F44EA5B15E8DD07294FE6983C8 /* nanopb.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = nanopb.modulemap; sourceTree = "<group>"; };
+		2AA3AB8336F38652FF10CB57D2B9B3C8 /* filter_block.cc */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.cpp; name = filter_block.cc; path = table/filter_block.cc; sourceTree = "<group>"; };
+		2C2256E8131595A4B7B3625BA1AF86D8 /* write_batch.cc */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.cpp; name = write_batch.cc; path = db/write_batch.cc; sourceTree = "<group>"; };
 		2C77ACF117B67DF2A1BF832A5D85138B /* comparator.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = comparator.h; path = include/leveldb/comparator.h; sourceTree = "<group>"; };
 		2C86DF4E285BFD1E2D58F09992F840A4 /* port.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = port.h; path = port/port.h; sourceTree = "<group>"; };
 		2DC2E505EAF6FFC2156F21314E5B4CF0 /* slice.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = slice.h; path = include/leveldb/slice.h; sourceTree = "<group>"; };
-		317110C407610AA6395F05B80A0FD03C /* c.cc */ = {isa = PBXFileReference; includeInIndex = 1; name = c.cc; path = db/c.cc; sourceTree = "<group>"; };
-		33E15C4DF5EB8E552FF240326398D331 /* hash.cc */ = {isa = PBXFileReference; includeInIndex = 1; name = hash.cc; path = util/hash.cc; sourceTree = "<group>"; };
+		317110C407610AA6395F05B80A0FD03C /* c.cc */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.cpp; name = c.cc; path = db/c.cc; sourceTree = "<group>"; };
+		33E15C4DF5EB8E552FF240326398D331 /* hash.cc */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.cpp; name = hash.cc; path = util/hash.cc; sourceTree = "<group>"; };
 		33E2F3D30C55AB80DAE26429B902544E /* arena.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = arena.h; path = util/arena.h; sourceTree = "<group>"; };
 		33E97186F4A01DA95D01D3DD58128BE8 /* Firebase.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Firebase.h; path = Core/Sources/Firebase.h; sourceTree = "<group>"; };
 		349E4EA7E18758D760C459DE3C432FB9 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		3542A78136FA960AEBEDC6808501E512 /* histogram.cc */ = {isa = PBXFileReference; includeInIndex = 1; name = histogram.cc; path = util/histogram.cc; sourceTree = "<group>"; };
+		3542A78136FA960AEBEDC6808501E512 /* histogram.cc */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.cpp; name = histogram.cc; path = util/histogram.cc; sourceTree = "<group>"; };
 		355DD24E07078C8607C56CBF046C1F71 /* GTMNSDictionary+URLArguments.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "GTMNSDictionary+URLArguments.h"; path = "Foundation/GTMNSDictionary+URLArguments.h"; sourceTree = "<group>"; };
 		35FE680A7F9537E52B40CC703A87F964 /* GTMNSString+URLArguments.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "GTMNSString+URLArguments.m"; path = "Foundation/GTMNSString+URLArguments.m"; sourceTree = "<group>"; };
 		3783224BE400DD10EB5C550E07B1E686 /* GTMNSData+zlib.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "GTMNSData+zlib.m"; path = "Foundation/GTMNSData+zlib.m"; sourceTree = "<group>"; };
 		37AC8810AD2DB379279DF6326DB30D7F /* snapshot.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = snapshot.h; path = db/snapshot.h; sourceTree = "<group>"; };
 		37C3E02BB0DB950CC2957869D98EAD79 /* Pods-Final_ProjectTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Final_ProjectTests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		384655FBC560B9F27E63578836773F8D /* GoogleToolboxForMac-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "GoogleToolboxForMac-prefix.pch"; sourceTree = "<group>"; };
-		387CB40D9ADEF9A49F06BD4F979280B2 /* iterator.cc */ = {isa = PBXFileReference; includeInIndex = 1; name = iterator.cc; path = table/iterator.cc; sourceTree = "<group>"; };
+		387CB40D9ADEF9A49F06BD4F979280B2 /* iterator.cc */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.cpp; name = iterator.cc; path = table/iterator.cc; sourceTree = "<group>"; };
 		38E4484E5A79AA7EC7E266F79744D32A /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		3B11741B1E890F6AFEEA2999837B38A2 /* options.cc */ = {isa = PBXFileReference; includeInIndex = 1; name = options.cc; path = util/options.cc; sourceTree = "<group>"; };
+		3B11741B1E890F6AFEEA2999837B38A2 /* options.cc */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.cpp; name = options.cc; path = util/options.cc; sourceTree = "<group>"; };
 		3C8007810AA2FE1C6E4BE5D674BC7495 /* Pods-Final_ProjectTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Final_ProjectTests.debug.xcconfig"; sourceTree = "<group>"; };
 		3CB81BF80E03945284059655593A1057 /* GTMSessionFetcherLogging.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GTMSessionFetcherLogging.m; path = Source/GTMSessionFetcherLogging.m; sourceTree = "<group>"; };
 		3CD1EDF485DFB8B93212A6B97BEA74A2 /* nanopb-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "nanopb-dummy.m"; sourceTree = "<group>"; };
 		3E094AF653CDA7DD1DD63EB6295F9AC7 /* nanopb-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "nanopb-prefix.pch"; sourceTree = "<group>"; };
 		3EADB394EDDF9B6B3A63EE8AE869DE11 /* block.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = block.h; path = table/block.h; sourceTree = "<group>"; };
 		3F252A5812D395E1B46D7147E9A3D151 /* Pods-Final_Project-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Final_Project-acknowledgements.markdown"; sourceTree = "<group>"; };
-		3F3AAE5F955E41625A78CD938ECC0BED /* coding.cc */ = {isa = PBXFileReference; includeInIndex = 1; name = coding.cc; path = util/coding.cc; sourceTree = "<group>"; };
+		3F3AAE5F955E41625A78CD938ECC0BED /* coding.cc */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.cpp; name = coding.cc; path = util/coding.cc; sourceTree = "<group>"; };
 		3FEE3A614419EEEBBC09E223820269DE /* Pods-Final_ProjectUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Final_ProjectUITests-acknowledgements.plist"; sourceTree = "<group>"; };
-		4111DB123729ECFB651D8C036F99D5B0 /* Pods-Final_ProjectUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-Final_ProjectUITests.modulemap"; sourceTree = "<group>"; };
-		41626DB147DCF319755BBE557C7583FC /* db_impl.cc */ = {isa = PBXFileReference; includeInIndex = 1; name = db_impl.cc; path = db/db_impl.cc; sourceTree = "<group>"; };
+		4111DB123729ECFB651D8C036F99D5B0 /* Pods-Final_ProjectUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-Final_ProjectUITests.modulemap"; sourceTree = "<group>"; };
+		41626DB147DCF319755BBE557C7583FC /* db_impl.cc */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.cpp; name = db_impl.cc; path = db/db_impl.cc; sourceTree = "<group>"; };
 		43E858E0C46C83554568795753727EC1 /* crc32c.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = crc32c.h; path = util/crc32c.h; sourceTree = "<group>"; };
 		45495E973C403B648C312256D91B1532 /* write_batch_internal.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = write_batch_internal.h; path = db/write_batch_internal.h; sourceTree = "<group>"; };
 		4556C49F628223FA8503F56FB9A32B8F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		4577022C07C09F1C81E3ABBA7181E86E /* Pods-Final_ProjectUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Final_ProjectUITests.release.xcconfig"; sourceTree = "<group>"; };
 		45789103D0C773D242CCB8B0C877FF63 /* Pods-Final_ProjectUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Final_ProjectUITests.debug.xcconfig"; sourceTree = "<group>"; };
-		45D28393248AC7D813C1F1E043B82CF5 /* Pods-Final_ProjectTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-Final_ProjectTests.modulemap"; sourceTree = "<group>"; };
+		45D28393248AC7D813C1F1E043B82CF5 /* Pods-Final_ProjectTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-Final_ProjectTests.modulemap"; sourceTree = "<group>"; };
 		49BAA905C044E3671A5C3C6B6E297323 /* builder.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = builder.h; path = db/builder.h; sourceTree = "<group>"; };
 		49EA3995B71EB71836854AEE5594F557 /* dumpfile.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = dumpfile.h; path = include/leveldb/dumpfile.h; sourceTree = "<group>"; };
 		4DB2D4ECE52E6844B4A6DAF0F0535DC7 /* SVProgressHUD-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SVProgressHUD-umbrella.h"; sourceTree = "<group>"; };
@@ -278,42 +278,42 @@
 		4EA1CE59502C5B818FF4D18A74D35424 /* GTMMethodCheck.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GTMMethodCheck.h; path = DebugUtils/GTMMethodCheck.h; sourceTree = "<group>"; };
 		52C055C18DE5E7C07597D65A514803C3 /* thread_annotations.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = thread_annotations.h; path = port/thread_annotations.h; sourceTree = "<group>"; };
 		53105344360A49B44DC2C376B140C0B3 /* GTMNSData+zlib.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "GTMNSData+zlib.h"; path = "Foundation/GTMNSData+zlib.h"; sourceTree = "<group>"; };
-		547E551EDC9162EBC1E439CB48DA9041 /* table.cc */ = {isa = PBXFileReference; includeInIndex = 1; name = table.cc; path = table/table.cc; sourceTree = "<group>"; };
+		547E551EDC9162EBC1E439CB48DA9041 /* table.cc */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.cpp; name = table.cc; path = table/table.cc; sourceTree = "<group>"; };
 		55799DA258B572D17AB97AEAE6944B82 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		55F15267CB177527DFC9DD097C963762 /* GTMSessionFetcher.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GTMSessionFetcher.m; path = Source/GTMSessionFetcher.m; sourceTree = "<group>"; };
 		5619F24F50276562945D114E94A7986C /* Pods-Final_ProjectTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Final_ProjectTests-acknowledgements.plist"; sourceTree = "<group>"; };
 		577F5B163DF79B8B3EF13D7799D653F2 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5815B7C62DBDE59FB4269A5055972F67 /* leveldb-library-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "leveldb-library-prefix.pch"; sourceTree = "<group>"; };
-		5843832773664CC8F154B9C672B73665 /* arena.cc */ = {isa = PBXFileReference; includeInIndex = 1; name = arena.cc; path = util/arena.cc; sourceTree = "<group>"; };
+		5843832773664CC8F154B9C672B73665 /* arena.cc */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.cpp; name = arena.cc; path = util/arena.cc; sourceTree = "<group>"; };
 		58F5CF73487A17F78A467258C6C22C0C /* testutil.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = testutil.h; path = util/testutil.h; sourceTree = "<group>"; };
 		5B078BDFC96318A73DE0786BFD0854E8 /* Pods-Final_ProjectTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Final_ProjectTests-dummy.m"; sourceTree = "<group>"; };
 		5B276C05001B3D619C3FAFCEE0D2A5FC /* table_cache.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = table_cache.h; path = db/table_cache.h; sourceTree = "<group>"; };
 		5E9114EE3563D194A5BA45661D3534FF /* Pods-Final_Project-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Final_Project-acknowledgements.plist"; sourceTree = "<group>"; };
-		5EBBAE935E268D27EE66351387C8ADE9 /* table_cache.cc */ = {isa = PBXFileReference; includeInIndex = 1; name = table_cache.cc; path = db/table_cache.cc; sourceTree = "<group>"; };
+		5EBBAE935E268D27EE66351387C8ADE9 /* table_cache.cc */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.cpp; name = table_cache.cc; path = db/table_cache.cc; sourceTree = "<group>"; };
 		6023039BAFFBB097D3FB61D730BD66F9 /* Pods-Final_Project-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Final_Project-frameworks.sh"; sourceTree = "<group>"; };
-		60DED525BB4439F0396771227076E476 /* env.cc */ = {isa = PBXFileReference; includeInIndex = 1; name = env.cc; path = util/env.cc; sourceTree = "<group>"; };
+		60DED525BB4439F0396771227076E476 /* env.cc */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.cpp; name = env.cc; path = util/env.cc; sourceTree = "<group>"; };
 		6102EC021A8833F7F5A0443FB2729D60 /* filter_block.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = filter_block.h; path = table/filter_block.h; sourceTree = "<group>"; };
 		614ED9FC3FBFD16908BC7E9189B1EEFA /* SVProgressAnimatedView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SVProgressAnimatedView.m; path = SVProgressHUD/SVProgressAnimatedView.m; sourceTree = "<group>"; };
 		62156B7188F540868F5F2E3F5C41C5A2 /* Pods-Final_Project-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Final_Project-umbrella.h"; sourceTree = "<group>"; };
 		63C45CA3A028DDD80B29D2018F1B6C04 /* SVIndefiniteAnimatedView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SVIndefiniteAnimatedView.h; path = SVProgressHUD/SVIndefiniteAnimatedView.h; sourceTree = "<group>"; };
 		64ABD77A5D7484CDDFD0C4E6C8E32122 /* histogram.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = histogram.h; path = util/histogram.h; sourceTree = "<group>"; };
-		65CBE439116FDBA8CB97D27C72F3AD79 /* db_iter.cc */ = {isa = PBXFileReference; includeInIndex = 1; name = db_iter.cc; path = db/db_iter.cc; sourceTree = "<group>"; };
+		65CBE439116FDBA8CB97D27C72F3AD79 /* db_iter.cc */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.cpp; name = db_iter.cc; path = db/db_iter.cc; sourceTree = "<group>"; };
 		67B6BF88930176943BB8E0DEC388C4F0 /* GTMSessionFetcherLogging.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GTMSessionFetcherLogging.h; path = Source/GTMSessionFetcherLogging.h; sourceTree = "<group>"; };
 		67F2EBA90F1AF3BFC8C9BC1E32179516 /* FirebaseDatabase.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FirebaseDatabase.framework; path = Frameworks/FirebaseDatabase.framework; sourceTree = "<group>"; };
 		6825C18CB47717B2332601B06CC798ED /* SVIndefiniteAnimatedView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SVIndefiniteAnimatedView.m; path = SVProgressHUD/SVIndefiniteAnimatedView.m; sourceTree = "<group>"; };
 		68817FF483D72CFFDBC2AB6E523A3022 /* logging.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = logging.h; path = util/logging.h; sourceTree = "<group>"; };
 		68CDDDA6302F87AE88FF2D97FF3BD274 /* GTMSessionFetcher-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "GTMSessionFetcher-umbrella.h"; sourceTree = "<group>"; };
-		6B4B153AC5A8F1E01D4854D5D34FCFB8 /* two_level_iterator.cc */ = {isa = PBXFileReference; includeInIndex = 1; name = two_level_iterator.cc; path = table/two_level_iterator.cc; sourceTree = "<group>"; };
-		6BF5F7F30B0A3CCE812B508BCB8E14D7 /* version_edit.cc */ = {isa = PBXFileReference; includeInIndex = 1; name = version_edit.cc; path = db/version_edit.cc; sourceTree = "<group>"; };
+		6B4B153AC5A8F1E01D4854D5D34FCFB8 /* two_level_iterator.cc */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.cpp; name = two_level_iterator.cc; path = table/two_level_iterator.cc; sourceTree = "<group>"; };
+		6BF5F7F30B0A3CCE812B508BCB8E14D7 /* version_edit.cc */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.cpp; name = version_edit.cc; path = db/version_edit.cc; sourceTree = "<group>"; };
 		6D194992228F4DA7FFD17C1B1751F1E3 /* GTMDebugSelectorValidation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GTMDebugSelectorValidation.h; path = DebugUtils/GTMDebugSelectorValidation.h; sourceTree = "<group>"; };
 		6D2BD199A08CC6169374EBCE3AB283E4 /* write_batch.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = write_batch.h; path = include/leveldb/write_batch.h; sourceTree = "<group>"; };
 		6DCE0F17B98C6C4BFBA221BDB5C8275A /* table.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = table.h; path = include/leveldb/table.h; sourceTree = "<group>"; };
 		6EC6B3F7100ED554269E41D9BB272CAC /* pb_encode.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = pb_encode.h; sourceTree = "<group>"; };
-		705364CFF1994366B23BB1EC0F82C27D /* dumpfile.cc */ = {isa = PBXFileReference; includeInIndex = 1; name = dumpfile.cc; path = db/dumpfile.cc; sourceTree = "<group>"; };
+		705364CFF1994366B23BB1EC0F82C27D /* dumpfile.cc */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.cpp; name = dumpfile.cc; path = db/dumpfile.cc; sourceTree = "<group>"; };
 		7059981A48853DBBA7AAFE73BCA5824E /* status.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = status.h; path = include/leveldb/status.h; sourceTree = "<group>"; };
 		70AD670F8D165E4ED56409158D58813A /* log_reader.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = log_reader.h; path = db/log_reader.h; sourceTree = "<group>"; };
 		70D15633EF640A7C2B0F187B8AE6E2F8 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		73D233B39A858A5D113EFB601D9FE39D /* log_reader.cc */ = {isa = PBXFileReference; includeInIndex = 1; name = log_reader.cc; path = db/log_reader.cc; sourceTree = "<group>"; };
+		73D233B39A858A5D113EFB601D9FE39D /* log_reader.cc */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.cpp; name = log_reader.cc; path = db/log_reader.cc; sourceTree = "<group>"; };
 		752468AC216297A3BB0F6C33786B7723 /* GoogleToolboxForMac-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "GoogleToolboxForMac-umbrella.h"; sourceTree = "<group>"; };
 		754B93BB2210C5A07BA211445B406966 /* skiplist.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = skiplist.h; path = db/skiplist.h; sourceTree = "<group>"; };
 		75593C57D22D02C5C30B070784977DE8 /* FirebaseCoreDiagnostics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FirebaseCoreDiagnostics.framework; path = Frameworks/FirebaseCoreDiagnostics.framework; sourceTree = "<group>"; };
@@ -321,37 +321,37 @@
 		7A28B4D77B59ABB5F9904D4619FB17E4 /* pb_common.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = pb_common.h; sourceTree = "<group>"; };
 		7D9D301C60033C87FAEFBE72176CF60B /* GTMDebugThreadValidation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GTMDebugThreadValidation.h; path = DebugUtils/GTMDebugThreadValidation.h; sourceTree = "<group>"; };
 		7F60D16B6810F7CFAC0DCBD563EBC5E0 /* format.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = format.h; path = table/format.h; sourceTree = "<group>"; };
-		82C5EE76EE6828188E6C9E5EF6328D49 /* block.cc */ = {isa = PBXFileReference; includeInIndex = 1; name = block.cc; path = table/block.cc; sourceTree = "<group>"; };
+		82C5EE76EE6828188E6C9E5EF6328D49 /* block.cc */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.cpp; name = block.cc; path = table/block.cc; sourceTree = "<group>"; };
 		83A56744C3FAE493FBDE3AAF5D1F79EC /* nanopb.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = nanopb.xcconfig; sourceTree = "<group>"; };
-		840CE4207D3FC59659A42E530011CA85 /* Pods_Final_Project.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Final_Project.framework; path = "Pods-Final_Project.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		840CE4207D3FC59659A42E530011CA85 /* Pods_Final_Project.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Final_Project.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8515A46A48EFC91AE2BAB50574BBB243 /* filter_policy.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = filter_policy.h; path = include/leveldb/filter_policy.h; sourceTree = "<group>"; };
-		851DEC78C9BF5C2D8655F37B8268B030 /* GTMSessionFetcher.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = GTMSessionFetcher.modulemap; sourceTree = "<group>"; };
+		851DEC78C9BF5C2D8655F37B8268B030 /* GTMSessionFetcher.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = GTMSessionFetcher.modulemap; sourceTree = "<group>"; };
 		85718D5BB249E9A443DF83D704ADE3DC /* GTMNSDictionary+URLArguments.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "GTMNSDictionary+URLArguments.m"; path = "Foundation/GTMNSDictionary+URLArguments.m"; sourceTree = "<group>"; };
-		858CFDB2A305E2EC228E6DC281E495A6 /* table_builder.cc */ = {isa = PBXFileReference; includeInIndex = 1; name = table_builder.cc; path = table/table_builder.cc; sourceTree = "<group>"; };
+		858CFDB2A305E2EC228E6DC281E495A6 /* table_builder.cc */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.cpp; name = table_builder.cc; path = table/table_builder.cc; sourceTree = "<group>"; };
 		8625E850EDFF9A988191A2C314AFEB19 /* mutexlock.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = mutexlock.h; path = util/mutexlock.h; sourceTree = "<group>"; };
 		880FE08D6DED6FDC4F382E240A84B72B /* GTMSessionFetcher-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "GTMSessionFetcher-prefix.pch"; sourceTree = "<group>"; };
-		884D8BC26850C9D380209CF4F622BD2B /* repair.cc */ = {isa = PBXFileReference; includeInIndex = 1; name = repair.cc; path = db/repair.cc; sourceTree = "<group>"; };
+		884D8BC26850C9D380209CF4F622BD2B /* repair.cc */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.cpp; name = repair.cc; path = db/repair.cc; sourceTree = "<group>"; };
 		8A1A5CC57C853B35D9AA2446CF920DAB /* SVRadialGradientLayer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SVRadialGradientLayer.h; path = SVProgressHUD/SVRadialGradientLayer.h; sourceTree = "<group>"; };
-		8BF5FEF27B44B30446ECFE6A5AE01CAC /* filter_policy.cc */ = {isa = PBXFileReference; includeInIndex = 1; name = filter_policy.cc; path = util/filter_policy.cc; sourceTree = "<group>"; };
+		8BF5FEF27B44B30446ECFE6A5AE01CAC /* filter_policy.cc */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.cpp; name = filter_policy.cc; path = util/filter_policy.cc; sourceTree = "<group>"; };
 		8D9CF4FDD4E39A4554B2363441B3FFCD /* port_posix.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = port_posix.h; path = port/port_posix.h; sourceTree = "<group>"; };
-		8EC5BF5DE6A57A8B8B2F824426C1343B /* leveldb.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = leveldb.framework; path = "leveldb-library.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8EC5BF5DE6A57A8B8B2F824426C1343B /* leveldb.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = leveldb.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		929918EF2759CA6AEE78CD43144A9F90 /* Pods-Final_ProjectTests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Final_ProjectTests-frameworks.sh"; sourceTree = "<group>"; };
-		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		93E696ACF30D87F08FFF6D2BB54203A4 /* Pods-Final_Project-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Final_Project-dummy.m"; sourceTree = "<group>"; };
 		94509B870C78D6C47B5C9E11AC69A400 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
 		9502025AB6223631C83E856EBA754A34 /* dbformat.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = dbformat.h; path = db/dbformat.h; sourceTree = "<group>"; };
-		95FA3618E462F574C13ADB4E0E89CA29 /* dbformat.cc */ = {isa = PBXFileReference; includeInIndex = 1; name = dbformat.cc; path = db/dbformat.cc; sourceTree = "<group>"; };
+		95FA3618E462F574C13ADB4E0E89CA29 /* dbformat.cc */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.cpp; name = dbformat.cc; path = db/dbformat.cc; sourceTree = "<group>"; };
 		965B25C594053411C2C91012FF87C10C /* block_builder.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = block_builder.h; path = table/block_builder.h; sourceTree = "<group>"; };
 		9938D8D469D5AF3B9DBE9F956770D859 /* SVProgressHUD.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SVProgressHUD.h; path = SVProgressHUD/SVProgressHUD.h; sourceTree = "<group>"; };
 		993B9A2F3F102E36C3AC34D32F4F6EB4 /* GTMSessionUploadFetcher.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GTMSessionUploadFetcher.m; path = Source/GTMSessionUploadFetcher.m; sourceTree = "<group>"; };
 		9A097AC9E78963F1EF8B8414BBE0F71E /* SVProgressHUD.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SVProgressHUD.m; path = SVProgressHUD/SVProgressHUD.m; sourceTree = "<group>"; };
 		9C1AC4DF5B14351B94AD3CBB90D8539A /* env_posix_test_helper.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = env_posix_test_helper.h; path = util/env_posix_test_helper.h; sourceTree = "<group>"; };
 		9CA9F25A0A5DEB9B1A76C443A4B4E392 /* random.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = random.h; path = util/random.h; sourceTree = "<group>"; };
-		9CD9508DE183644F7F85D8C8FBBA6A7D /* pb_decode.c */ = {isa = PBXFileReference; includeInIndex = 1; path = pb_decode.c; sourceTree = "<group>"; };
-		9DB2C62BD268B9B607A8F5035F786B88 /* nanopb.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = nanopb.framework; path = nanopb.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		9EABC5E37BD5DB0374A77C28FBE8A138 /* GTMSessionFetcher.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = GTMSessionFetcher.framework; path = GTMSessionFetcher.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		9F727B497DF3240B3EEA139A43C4F8FB /* cache.cc */ = {isa = PBXFileReference; includeInIndex = 1; name = cache.cc; path = util/cache.cc; sourceTree = "<group>"; };
-		9F76DA191E86B8D34F1DE518881980A9 /* pb_encode.c */ = {isa = PBXFileReference; includeInIndex = 1; path = pb_encode.c; sourceTree = "<group>"; };
+		9CD9508DE183644F7F85D8C8FBBA6A7D /* pb_decode.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; path = pb_decode.c; sourceTree = "<group>"; };
+		9DB2C62BD268B9B607A8F5035F786B88 /* nanopb.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = nanopb.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9EABC5E37BD5DB0374A77C28FBE8A138 /* GTMSessionFetcher.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = GTMSessionFetcher.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9F727B497DF3240B3EEA139A43C4F8FB /* cache.cc */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.cpp; name = cache.cc; path = util/cache.cc; sourceTree = "<group>"; };
+		9F76DA191E86B8D34F1DE518881980A9 /* pb_encode.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; path = pb_encode.c; sourceTree = "<group>"; };
 		A8625DFE95B8A130A94E095C8D7AA35E /* hash.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = hash.h; path = util/hash.h; sourceTree = "<group>"; };
 		A8AFAD994B9A4E8ED2271970D58E11AD /* GTMSessionUploadFetcher.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GTMSessionUploadFetcher.h; path = Source/GTMSessionUploadFetcher.h; sourceTree = "<group>"; };
 		A8EEFA44B816C8C0D1777FBEB99964B3 /* filename.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = filename.h; path = db/filename.h; sourceTree = "<group>"; };
@@ -363,22 +363,22 @@
 		B466F79493700267CA8C277D219AB0D5 /* Pods-Final_Project.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Final_Project.debug.xcconfig"; sourceTree = "<group>"; };
 		B46F373DC3C02837DC4AB67EAAB01C9D /* Pods-Final_ProjectUITests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Final_ProjectUITests-frameworks.sh"; sourceTree = "<group>"; };
 		B47E0DD6A777389E1EAEBEB566DC1AC4 /* db.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = db.h; path = include/leveldb/db.h; sourceTree = "<group>"; };
-		B56BDFAE58DA3229246FBD8A25AF8606 /* logging.cc */ = {isa = PBXFileReference; includeInIndex = 1; name = logging.cc; path = util/logging.cc; sourceTree = "<group>"; };
+		B56BDFAE58DA3229246FBD8A25AF8606 /* logging.cc */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.cpp; name = logging.cc; path = util/logging.cc; sourceTree = "<group>"; };
 		B5CB90DF5E56659A99653EA1E51DA0DB /* merger.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = merger.h; path = table/merger.h; sourceTree = "<group>"; };
 		B670548AEA281073CF1E77C65C7ADF9F /* SVProgressHUD-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SVProgressHUD-prefix.pch"; sourceTree = "<group>"; };
-		B78E7F113F8CB6FEF90E85B5019E4956 /* crc32c.cc */ = {isa = PBXFileReference; includeInIndex = 1; name = crc32c.cc; path = util/crc32c.cc; sourceTree = "<group>"; };
+		B78E7F113F8CB6FEF90E85B5019E4956 /* crc32c.cc */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.cpp; name = crc32c.cc; path = util/crc32c.cc; sourceTree = "<group>"; };
 		B9ED6FF281FB4F70FD90ED04DDED428D /* leveldb-library-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "leveldb-library-dummy.m"; sourceTree = "<group>"; };
 		BA1B680E4D30DD3F37CAAAAF13BC8839 /* GTMSessionFetcher-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "GTMSessionFetcher-dummy.m"; sourceTree = "<group>"; };
 		BC9252B486C84FA6B93A8590BA674F3D /* SVProgressAnimatedView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SVProgressAnimatedView.h; path = SVProgressHUD/SVProgressAnimatedView.h; sourceTree = "<group>"; };
-		BD8A96846DDC1838EB11EDC4DF790D8A /* Pods_Final_ProjectUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Final_ProjectUITests.framework; path = "Pods-Final_ProjectUITests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		BFED73529746CB1D0FA55FB464585E26 /* testharness.cc */ = {isa = PBXFileReference; includeInIndex = 1; name = testharness.cc; path = util/testharness.cc; sourceTree = "<group>"; };
+		BD8A96846DDC1838EB11EDC4DF790D8A /* Pods_Final_ProjectUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Final_ProjectUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BFED73529746CB1D0FA55FB464585E26 /* testharness.cc */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.cpp; name = testharness.cc; path = util/testharness.cc; sourceTree = "<group>"; };
 		C1BFB55CE168C1FEC65F995DA667598E /* two_level_iterator.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = two_level_iterator.h; path = table/two_level_iterator.h; sourceTree = "<group>"; };
 		C2FF911A12BBACA5228DDBAF1A3B8F4D /* nanopb-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "nanopb-umbrella.h"; sourceTree = "<group>"; };
 		C5070C27592929E9A4C61EBEB14B2B34 /* Pods-Final_ProjectTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Final_ProjectTests-umbrella.h"; sourceTree = "<group>"; };
 		C5304174BC30D156D4BBEF24F7F716FA /* leveldb-library.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "leveldb-library.xcconfig"; sourceTree = "<group>"; };
 		C69110BC30C33DCAF0DB1A85E2157D83 /* SVRadialGradientLayer.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SVRadialGradientLayer.m; path = SVProgressHUD/SVRadialGradientLayer.m; sourceTree = "<group>"; };
-		C6D7F2ADD2FA5BA0B43E2A2AB1856409 /* Pods_Final_ProjectTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Final_ProjectTests.framework; path = "Pods-Final_ProjectTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		C71F2A0C2657201D91C8F809B44D0ABD /* GoogleToolboxForMac.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = GoogleToolboxForMac.framework; path = GoogleToolboxForMac.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C6D7F2ADD2FA5BA0B43E2A2AB1856409 /* Pods_Final_ProjectTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Final_ProjectTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C71F2A0C2657201D91C8F809B44D0ABD /* GoogleToolboxForMac.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = GoogleToolboxForMac.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C859E89394E11184B49A112427C7ADCA /* Pods-Final_ProjectUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Final_ProjectUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		CBF187A9413B69C2343F9152EB327874 /* GTMNSString+URLArguments.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "GTMNSString+URLArguments.h"; path = "Foundation/GTMNSString+URLArguments.h"; sourceTree = "<group>"; };
 		CD2CD5B919D024660EE9655AB3437C80 /* Pods-Final_Project-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Final_Project-resources.sh"; sourceTree = "<group>"; };
@@ -387,27 +387,27 @@
 		CF33B07BFBD56CC10C0E581DC32FC436 /* version_edit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = version_edit.h; path = db/version_edit.h; sourceTree = "<group>"; };
 		CFC8D2E264F7184BB6E1A3A054F1EF12 /* db_iter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = db_iter.h; path = db/db_iter.h; sourceTree = "<group>"; };
 		D1F3144227A0C09DA942AA0FA7FD9704 /* options.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = options.h; path = include/leveldb/options.h; sourceTree = "<group>"; };
-		D3394F6CA3625795CDBA6A1525A13953 /* bloom.cc */ = {isa = PBXFileReference; includeInIndex = 1; name = bloom.cc; path = util/bloom.cc; sourceTree = "<group>"; };
-		D35164BC16942A209B68C702151D997C /* port_posix_sse.cc */ = {isa = PBXFileReference; includeInIndex = 1; name = port_posix_sse.cc; path = port/port_posix_sse.cc; sourceTree = "<group>"; };
+		D3394F6CA3625795CDBA6A1525A13953 /* bloom.cc */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.cpp; name = bloom.cc; path = util/bloom.cc; sourceTree = "<group>"; };
+		D35164BC16942A209B68C702151D997C /* port_posix_sse.cc */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.cpp; name = port_posix_sse.cc; path = port/port_posix_sse.cc; sourceTree = "<group>"; };
 		D5073FF1600C7F3DA5966A1B3A55F366 /* GTMSessionFetcher.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GTMSessionFetcher.h; path = Source/GTMSessionFetcher.h; sourceTree = "<group>"; };
-		D5B6DD8BFE80AAEBC019C12B88300A8A /* leveldb-library.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "leveldb-library.modulemap"; sourceTree = "<group>"; };
+		D5B6DD8BFE80AAEBC019C12B88300A8A /* leveldb-library.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "leveldb-library.modulemap"; sourceTree = "<group>"; };
 		D7B5E2009772ECD48F3B83793AC1AF3A /* Pods-Final_ProjectTests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Final_ProjectTests-resources.sh"; sourceTree = "<group>"; };
 		DDEA54401220D7DA9515B8288F6EB0E7 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E00A29DA6336DEA0E86830B5704F6883 /* FirebaseInstanceID.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FirebaseInstanceID.framework; path = Frameworks/FirebaseInstanceID.framework; sourceTree = "<group>"; };
 		E144FA2E3CE7389568E3A9DB2DA75D15 /* SVProgressHUD.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = SVProgressHUD.bundle; path = SVProgressHUD/SVProgressHUD.bundle; sourceTree = "<group>"; };
 		E167877EA3C643628C4C8793B7B15E32 /* env.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = env.h; path = include/leveldb/env.h; sourceTree = "<group>"; };
 		E2027382C466EC9637DF86C37F9D0B7C /* c.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = c.h; path = include/leveldb/c.h; sourceTree = "<group>"; };
-		E2202F2746D8E6BF8FC6FE113777C8D8 /* builder.cc */ = {isa = PBXFileReference; includeInIndex = 1; name = builder.cc; path = db/builder.cc; sourceTree = "<group>"; };
+		E2202F2746D8E6BF8FC6FE113777C8D8 /* builder.cc */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.cpp; name = builder.cc; path = db/builder.cc; sourceTree = "<group>"; };
 		E8954251C7C68C4FD658EAB4BC062186 /* log_format.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = log_format.h; path = db/log_format.h; sourceTree = "<group>"; };
 		E96E6C16A11CA4B3EABE46CDA23D956E /* leveldb-library-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "leveldb-library-umbrella.h"; sourceTree = "<group>"; };
-		ED944D86219C148FC4B5844698DF07C1 /* env_posix.cc */ = {isa = PBXFileReference; includeInIndex = 1; name = env_posix.cc; path = util/env_posix.cc; sourceTree = "<group>"; };
+		ED944D86219C148FC4B5844698DF07C1 /* env_posix.cc */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.cpp; name = env_posix.cc; path = util/env_posix.cc; sourceTree = "<group>"; };
 		EFBADA4201798F76CD6BFFE83C7A7670 /* coding.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = coding.h; path = util/coding.h; sourceTree = "<group>"; };
 		EFFD4309F6E3359C20752C652D24B64F /* FirebaseStorage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FirebaseStorage.framework; path = Frameworks/FirebaseStorage.framework; sourceTree = "<group>"; };
 		F0A36B7E447E706D33BD9067447A40CD /* pb_decode.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = pb_decode.h; sourceTree = "<group>"; };
-		F2233C8CE568AC182C17A0C216027A31 /* version_set.cc */ = {isa = PBXFileReference; includeInIndex = 1; name = version_set.cc; path = db/version_set.cc; sourceTree = "<group>"; };
-		F2F98503D986D16A011C7A37D638925B /* merger.cc */ = {isa = PBXFileReference; includeInIndex = 1; name = merger.cc; path = table/merger.cc; sourceTree = "<group>"; };
+		F2233C8CE568AC182C17A0C216027A31 /* version_set.cc */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.cpp; name = version_set.cc; path = db/version_set.cc; sourceTree = "<group>"; };
+		F2F98503D986D16A011C7A37D638925B /* merger.cc */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.cpp; name = merger.cc; path = table/merger.cc; sourceTree = "<group>"; };
 		F350900B44DE9A94FBEB7B6654926A25 /* FirebaseAnalytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FirebaseAnalytics.framework; path = Frameworks/FirebaseAnalytics.framework; sourceTree = "<group>"; };
-		F3D53284F5CAD9E3EAFF164AC388CECE /* GoogleToolboxForMac.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = GoogleToolboxForMac.modulemap; sourceTree = "<group>"; };
+		F3D53284F5CAD9E3EAFF164AC388CECE /* GoogleToolboxForMac.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = GoogleToolboxForMac.modulemap; sourceTree = "<group>"; };
 		F4EA65D30E01504A11041F7F93176990 /* GoogleToolboxForMac-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "GoogleToolboxForMac-dummy.m"; sourceTree = "<group>"; };
 		F84FF027B9887A36B2F76110EBCEFF73 /* GTMSessionFetcher.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = GTMSessionFetcher.xcconfig; sourceTree = "<group>"; };
 		F90D734A545CFEEF687797B9B288140F /* GTMSessionFetcherService.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GTMSessionFetcherService.m; path = Source/GTMSessionFetcherService.m; sourceTree = "<group>"; };
@@ -499,7 +499,6 @@
 				B4D4FCDC841E23F3246E68E3878A14E3 /* Resources */,
 				E5A9CE34E0B0470381564EAA3DFDFE18 /* Support Files */,
 			);
-			name = SVProgressHUD;
 			path = SVProgressHUD;
 			sourceTree = "<group>";
 		};
@@ -516,7 +515,6 @@
 			children = (
 				0991E0C0A57AB6FF2A9B5CFCCC321EA5 /* Core */,
 			);
-			name = Firebase;
 			path = Firebase;
 			sourceTree = "<group>";
 		};
@@ -534,7 +532,6 @@
 				DD7544C20EBD9B03E9632F5AB59020CE /* Core */,
 				F68218BF3EDC88E23DBCC05350C29D2B /* Support Files */,
 			);
-			name = GTMSessionFetcher;
 			path = GTMSessionFetcher;
 			sourceTree = "<group>";
 		};
@@ -560,7 +557,6 @@
 			children = (
 				1A80D34C447CA2DFF6F9C263D8B6F69C /* Frameworks */,
 			);
-			name = FirebaseAuth;
 			path = FirebaseAuth;
 			sourceTree = "<group>";
 		};
@@ -569,7 +565,6 @@
 			children = (
 				A8AD15506075D87B3D04A723789B5BB7 /* Frameworks */,
 			);
-			name = FirebaseStorage;
 			path = FirebaseStorage;
 			sourceTree = "<group>";
 		};
@@ -711,7 +706,6 @@
 				45495E973C403B648C312256D91B1532 /* write_batch_internal.h */,
 				3CA8164CBF4A81E8FE5ED609C7B392AC /* Support Files */,
 			);
-			name = "leveldb-library";
 			path = "leveldb-library";
 			sourceTree = "<group>";
 		};
@@ -725,7 +719,6 @@
 				A92E6E71D9221612F1036213D3406F85 /* NSString+URLArguments */,
 				328B29AAA94807D6A81D8001F9443E17 /* Support Files */,
 			);
-			name = GoogleToolboxForMac;
 			path = GoogleToolboxForMac;
 			sourceTree = "<group>";
 		};
@@ -762,7 +755,6 @@
 			children = (
 				FF2F2FD1A459F482ABCA2B17831CCEE3 /* Frameworks */,
 			);
-			name = FirebaseDatabase;
 			path = FirebaseDatabase;
 			sourceTree = "<group>";
 		};
@@ -907,7 +899,6 @@
 			children = (
 				88A99A8BC262E54C45DB88EACB66EF03 /* Frameworks */,
 			);
-			name = FirebaseCore;
 			path = FirebaseCore;
 			sourceTree = "<group>";
 		};
@@ -924,7 +915,6 @@
 			children = (
 				7AD4442C80973039A69F5296E86FD0B8 /* Frameworks */,
 			);
-			name = FirebaseInstanceID;
 			path = FirebaseInstanceID;
 			sourceTree = "<group>";
 		};
@@ -933,7 +923,6 @@
 			children = (
 				FD6554C0C8229162FA3F40589D0A9C8F /* Frameworks */,
 			);
-			name = FirebaseAnalytics;
 			path = FirebaseAnalytics;
 			sourceTree = "<group>";
 		};
@@ -995,7 +984,6 @@
 				7300DDC59F4CD33C4AA811CD9DE29D1F /* encode */,
 				4C13DA80F60F174ACD9FBC88B641B72A /* Support Files */,
 			);
-			name = nanopb;
 			path = nanopb;
 			sourceTree = "<group>";
 		};

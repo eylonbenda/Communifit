@@ -16,6 +16,7 @@ class ExerciseViewController: UIViewController {
     @IBOutlet weak var exDesc: UILabel!
     
     
+    
   
    
     var currentUser : User?

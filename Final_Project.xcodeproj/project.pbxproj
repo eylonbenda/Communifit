@@ -50,6 +50,8 @@
 		B716AB4C209DB69000B0A1D8 /* ExercisesPlanTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = B716AB4B209DB69000B0A1D8 /* ExercisesPlanTable.swift */; };
 		B716AB4E209DEEE100B0A1D8 /* ExercisePlanTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B716AB4D209DEEE100B0A1D8 /* ExercisePlanTableCell.swift */; };
 		B716AB50209E058400B0A1D8 /* ExerciseInPlanViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B716AB4F209E058400B0A1D8 /* ExerciseInPlanViewController.swift */; };
+		B716AB52209E1D0A00B0A1D8 /* analog-watch-alarm_daniel-simion.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B716AB51209E1D0A00B0A1D8 /* analog-watch-alarm_daniel-simion.mp3 */; };
+		B716AB58209E1E0900B0A1D8 /* alarm.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B716AB57209E1E0900B0A1D8 /* alarm.mp3 */; };
 		B7C2551320975C32009CCDFC /* PlansViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7C2551220975C32009CCDFC /* PlansViewController.swift */; };
 		B7C255152097610B009CCDFC /* plansViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7C255142097610B009CCDFC /* plansViewCell.swift */; };
 		B7CB89FB208E204F005364D6 /* Comment.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7CB89FA208E204F005364D6 /* Comment.swift */; };
@@ -143,6 +145,8 @@
 		B716AB4B209DB69000B0A1D8 /* ExercisesPlanTable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExercisesPlanTable.swift; sourceTree = "<group>"; };
 		B716AB4D209DEEE100B0A1D8 /* ExercisePlanTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExercisePlanTableCell.swift; sourceTree = "<group>"; };
 		B716AB4F209E058400B0A1D8 /* ExerciseInPlanViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseInPlanViewController.swift; sourceTree = "<group>"; };
+		B716AB51209E1D0A00B0A1D8 /* analog-watch-alarm_daniel-simion.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "analog-watch-alarm_daniel-simion.mp3"; path = "../../../Downloads/analog-watch-alarm_daniel-simion.mp3"; sourceTree = "<group>"; };
+		B716AB57209E1E0900B0A1D8 /* alarm.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = alarm.mp3; sourceTree = "<group>"; };
 		B7C2551220975C32009CCDFC /* PlansViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlansViewController.swift; sourceTree = "<group>"; };
 		B7C255142097610B009CCDFC /* plansViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = plansViewCell.swift; sourceTree = "<group>"; };
 		B7CB89FA208E204F005364D6 /* Comment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Comment.swift; sourceTree = "<group>"; };
@@ -206,6 +210,7 @@
 				ED7B8594A28F32FAA5B86E5A /* Pods_Final_Project.framework */,
 				32282E27785FBF70B8E46B96 /* Pods_Final_ProjectTests.framework */,
 				3DDC29C8EE71A0AE9E5917AA /* Pods_Final_ProjectUITests.framework */,
+				B716AB51209E1D0A00B0A1D8 /* analog-watch-alarm_daniel-simion.mp3 */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -243,6 +248,7 @@
 		8400AB3F1FF5479D00969441 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				B716AB57209E1E0900B0A1D8 /* alarm.mp3 */,
 				F19D11DD1FF15575003AE817 /* LoginViewController.swift */,
 				F19D11D71FF14BCF003AE817 /* RegisterViewController.swift */,
 				84EE55B51FEFF07C00588A61 /* AppDelegate.swift */,
@@ -479,8 +485,10 @@
 			files = (
 				F19D11DA1FF15285003AE817 /* GoogleService-Info.plist in Resources */,
 				84EE55C31FEFF07C00588A61 /* LaunchScreen.storyboard in Resources */,
+				B716AB58209E1E0900B0A1D8 /* alarm.mp3 in Resources */,
 				84EE55C01FEFF07C00588A61 /* Assets.xcassets in Resources */,
 				84EE55BB1FEFF07C00588A61 /* Main.storyboard in Resources */,
+				B716AB52209E1D0A00B0A1D8 /* analog-watch-alarm_daniel-simion.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

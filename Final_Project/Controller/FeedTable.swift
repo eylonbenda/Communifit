@@ -28,16 +28,10 @@ class FeedTable: UITableViewController , UIImagePickerControllerDelegate , UINav
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-//        let uid = Auth.auth().currentUser?.uid
-//        Model.instance.getUser(uid: uid!, callback: { (user) in
-//            self.currentUser = user
-//            let thirdTab = self.tabBarController?.viewControllers![3] as! UINavigationController
-//            let planTableVC = thirdTab.viewControllers.first as! PlansViewController
-//            planTableVC.currentUser = self.currentUser
-////            ModelNotification.user.post(data: self.currentUser!)
-//        })
-        
+        if Auth.auth().currentUser == nil {
+            performSegue(withIdentifier: "goToAuth", sender: self)
+        }
+        else {
         let uid = Auth.auth().currentUser?.uid
         Model.instance.getUser(uid: uid!, callback: { (user) in
             
@@ -73,6 +67,8 @@ class FeedTable: UITableViewController , UIImagePickerControllerDelegate , UINav
         Model.instance.getAllPostsAndObserve()
         
         
+        }
+        
     }
     
     deinit {
@@ -81,7 +77,7 @@ class FeedTable: UITableViewController , UIImagePickerControllerDelegate , UINav
     
     override func viewDidAppear(_ animated: Bool) {
         
-        if Auth.auth().currentUser != nil {
+       // if Auth.auth().currentUser != nil {
             // User is signed in.
 //            let uid = Auth.auth().currentUser?.uid
 //            Model.instance.getUser(uid: uid!, callback: { (user) in
@@ -94,12 +90,12 @@ class FeedTable: UITableViewController , UIImagePickerControllerDelegate , UINav
             
            
             
-        } else {
+     //   } else {
             
-            performSegue(withIdentifier: "goToAuth", sender: self)
+       //     performSegue(withIdentifier: "goToAuth", sender: self)
             
             
-        }
+        //}
     }
 
     func updateUserConnected(user : User){

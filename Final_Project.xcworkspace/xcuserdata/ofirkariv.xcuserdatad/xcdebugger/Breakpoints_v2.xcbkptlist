@@ -6,31 +6,15 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            shouldBeEnabled = "No"
+            shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "Final_Project/Controller/PlansViewController.swift"
-            timestampString = "547226013.793048"
+            filePath = "Final_Project/Controller/ExerciseInPlanViewController.swift"
+            timestampString = "547241561.611514"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "58"
-            endingLineNumber = "58"
-            landmarkName = "tableView(_:numberOfRowsInSection:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Final_Project/Controller/PlansViewController.swift"
-            timestampString = "547226013.793129"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "86"
-            endingLineNumber = "86"
+            startingLineNumber = "87"
+            endingLineNumber = "87"
             landmarkName = "viewDidLoad()"
             landmarkType = "7">
          </BreakpointContent>
@@ -41,13 +25,13 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "Final_Project/Controller/ExerciseViewController.swift"
-            timestampString = "547226013.793193"
+            filePath = "Final_Project/Controller/ExerciseInPlanViewController.swift"
+            timestampString = "547241561.614413"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "65"
-            endingLineNumber = "65"
-            landmarkName = "addExcercise(_:)"
+            startingLineNumber = "29"
+            endingLineNumber = "29"
+            landmarkName = "slider(_:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -57,110 +41,61 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "Final_Project/Controller/ExerciseViewController.swift"
-            timestampString = "547226013.793256"
+            filePath = "Final_Project/Controller/ExercisesRepoTableViewController.swift"
+            timestampString = "547241561.6146621"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "58"
-            endingLineNumber = "58"
-            landmarkName = "addExcercise(_:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Final_Project/Controller/ExerciseViewController.swift"
-            timestampString = "547226013.7933151"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "91"
-            endingLineNumber = "91"
-            landmarkName = "addExcercise(_:)"
+            startingLineNumber = "90"
+            endingLineNumber = "90"
+            landmarkName = "tableView(_:cellForRowAt:)"
             landmarkType = "7">
             <Locations>
                <Location
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "closure #4 (__ObjC.UIAlertAction) -&gt; () in Final_Project.ExerciseViewController.addExcercise(Any) -&gt; ()"
+                  symbolName = "Final_Project.ExercisesRepoTableViewController.tableView(__ObjC.UITableView, cellForRowAt: Foundation.IndexPath) -&gt; __ObjC.UITableViewCell"
                   moduleName = "Final_Project"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/ofirkariv/Desktop/050518/Communifit/Final_Project/Controller/ExerciseViewController.swift"
-                  timestampString = "547225190.811969"
+                  urlString = "file:///Users/ofirkariv/Desktop/050518/Communifit/Final_Project/Controller/ExercisesRepoTableViewController.swift"
+                  timestampString = "547239444.19893"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "91"
-                  endingLineNumber = "91"
-                  offsetFromSymbolStart = "3644">
+                  startingLineNumber = "90"
+                  endingLineNumber = "90"
+                  offsetFromSymbolStart = "1997">
                </Location>
                <Location
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "closure #4 (__ObjC.UIAlertAction) -&gt; () in Final_Project.ExerciseViewController.addExcercise(Any) -&gt; ()"
+                  symbolName = "Final_Project.ExercisesRepoTableViewController.tableView(__ObjC.UITableView, cellForRowAt: Foundation.IndexPath) -&gt; __ObjC.UITableViewCell"
                   moduleName = "Final_Project"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/ofirkariv/Desktop/050518/Communifit/Final_Project/Controller/ExerciseViewController.swift"
-                  timestampString = "547225190.816354"
+                  urlString = "file:///Users/ofirkariv/Desktop/050518/Communifit/Final_Project/Controller/ExercisesRepoTableViewController.swift"
+                  timestampString = "547239444.2050461"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "90"
+                  endingLineNumber = "90"
+                  offsetFromSymbolStart = "2958">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Optional&lt;__ObjC.UIImage&gt;) -&gt; () in Final_Project.ExercisesRepoTableViewController.tableView(__ObjC.UITableView, cellForRowAt: Foundation.IndexPath) -&gt; __ObjC.UITableViewCell"
+                  moduleName = "Final_Project"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ofirkariv/Desktop/050518/Communifit/Final_Project/Controller/ExercisesRepoTableViewController.swift"
+                  timestampString = "547239444.208617"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "91"
                   endingLineNumber = "91"
-                  offsetFromSymbolStart = "4600">
+                  offsetFromSymbolStart = "22">
                </Location>
             </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Final_Project/Controller/PlansViewController.swift"
-            timestampString = "547226013.79336"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "76"
-            endingLineNumber = "76"
-            landmarkName = "tableView(_:didSelectRowAt:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Final_Project/Controller/PlansViewController.swift"
-            timestampString = "547226013.7934051"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "48"
-            endingLineNumber = "48"
-            landmarkName = "prepare(for:sender:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Final_Project/Controller/PlansViewController.swift"
-            timestampString = "547226013.793447"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "41"
-            endingLineNumber = "41"
-            landmarkName = "prepare(for:sender:)"
-            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

@@ -12,6 +12,7 @@ class ExercisesPlanTable: UITableViewController {
 
     
     var plan : Plan?
+    var exer : Exercise?
     
     
     
@@ -48,15 +49,29 @@ class ExercisesPlanTable: UITableViewController {
     }
 
     
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        exer = plan?.exercises[indexPath.row]
+        performSegue(withIdentifier: "showExercise", sender: self)
+        
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "showExercise"  {
+            let destVC = segue.destination as? ExerciseInPlanViewController
+            destVC?.exercise = exer
+            
+        }
+    }
+    
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "exerciseCell", for: indexPath) as! ExercisePlanTableCell
 
-        let exe  = plan?.exercises[indexPath.row]
-        cell.exercisePlan.text = exe?.name
+        exer  = plan?.exercises[indexPath.row]
+        cell.exercisePlan.text = exer?.name
         
-        if exe?.urlImage != nil {
+        if exer?.urlImage != nil {
         
-            ModelFilesStore.getImage(name: "exercisesImages/"+(exe?.name)!+".png", urlStr: (exe?.urlImage)!) { (image) in
+            ModelFilesStore.getImage(name: "exercisesImages/"+(exer?.name)!+".png", urlStr: (exer?.urlImage)!) { (image) in
                 
                 cell.exerciseImage.image = image
                 

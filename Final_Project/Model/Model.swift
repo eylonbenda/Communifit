@@ -235,7 +235,9 @@ class Model {
     
     func getPlans (user : User ){
         usermodelFirebase.getAllPlans(user: user) { (plans) in
+            if plans != nil {
             ModelNotification.planList.post(data: plans!)
+            }
         }
             
     }
