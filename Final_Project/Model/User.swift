@@ -93,7 +93,10 @@ class User {
     {
         var map=[String:Any]()
         for  plan in myPlans{
+            if plan.planName != nil {
             map[plan.planName!] = plan.planToJson()
+            }
+            
         }
         return map
     }

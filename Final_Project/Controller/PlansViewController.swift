@@ -16,6 +16,8 @@ class PlansViewController: UIViewController ,  UITableViewDelegate , UITableView
     @IBOutlet weak var input: UITextField!
     var currentUser : User?
     var planArr = [Plan]()
+    var plan : Plan?
+    var row : Int?
     
     @IBAction func viewExercises(_ sender: Any) {
         
@@ -26,13 +28,31 @@ class PlansViewController: UIViewController ,  UITableViewDelegate , UITableView
     @IBAction func addPlan(_ sender: Any) {
         
         if input.text != nil && input.text != "" {
-        let plan = Plan(planName: input.text!)
-        self.currentUser?.myPlans.append(plan)
+         plan = Plan(planName: input.text!)
+        self.currentUser?.myPlans.append(plan!)
         Model.instance.addPlanToUser(user: self.currentUser!)
+        ModelNotification.plan.post(data: plan!)
         performSegue(withIdentifier: "goToExercise", sender: self)
         }
         else {}
         // TODO pormpt alert of empty name
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        
+        if segue.identifier == "goToExercise" {
+            
+            let des = segue.destination as? CreateWorkout
+            des?.plan = self.plan
+            
+        } else if segue.identifier == "ViewPlan" {
+            
+            let des = segue.destination as? ExercisesPlanTable
+            des?.plan = self.plan
+            
+        }
+        
+        
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -48,6 +68,17 @@ class PlansViewController: UIViewController ,  UITableViewDelegate , UITableView
         
         return cell
     }
+    
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
+        row = indexPath.row
+        plan = currentUser?.myPlans[row!]
+        performSegue(withIdentifier: "ViewPlan", sender: self)
+        
+        
+    }
+    
     
 
     

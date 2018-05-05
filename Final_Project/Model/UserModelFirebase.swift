@@ -37,6 +37,13 @@ class UserModelFirebase  {
         myRef?.setValue(user.convertMyPlanToJson())
     }
     
+    func addExerciseToPlan(user : User , planName : String, exercise : Exercise){
+        
+        let myRef = ref?.child("Users").child(user.uid!).child("myPlans").child(planName).child("exercises").child(exercise.name)
+        myRef?.setValue(exercise.toJson())
+        
+    }
+    
     
     func getUser(uid : String , callback : @escaping (User?) -> Void){
         

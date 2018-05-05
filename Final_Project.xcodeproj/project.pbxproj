@@ -47,6 +47,9 @@
 		84FB3B091FFE40DE009C363B /* WorkoutsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84FB3B081FFE40DE009C363B /* WorkoutsTableViewController.swift */; };
 		84FB3B0B1FFE46C8009C363B /* FeedTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84FB3B0A1FFE46C8009C363B /* FeedTable.swift */; };
 		B1CE1039F69B436F523698F9 /* Pods_Final_ProjectTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32282E27785FBF70B8E46B96 /* Pods_Final_ProjectTests.framework */; };
+		B716AB4C209DB69000B0A1D8 /* ExercisesPlanTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = B716AB4B209DB69000B0A1D8 /* ExercisesPlanTable.swift */; };
+		B716AB4E209DEEE100B0A1D8 /* ExercisePlanTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B716AB4D209DEEE100B0A1D8 /* ExercisePlanTableCell.swift */; };
+		B716AB50209E058400B0A1D8 /* ExerciseInPlanViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B716AB4F209E058400B0A1D8 /* ExerciseInPlanViewController.swift */; };
 		B7C2551320975C32009CCDFC /* PlansViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7C2551220975C32009CCDFC /* PlansViewController.swift */; };
 		B7C255152097610B009CCDFC /* plansViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7C255142097610B009CCDFC /* plansViewCell.swift */; };
 		B7CB89FB208E204F005364D6 /* Comment.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7CB89FA208E204F005364D6 /* Comment.swift */; };
@@ -137,6 +140,9 @@
 		84FB3B081FFE40DE009C363B /* WorkoutsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutsTableViewController.swift; sourceTree = "<group>"; };
 		84FB3B0A1FFE46C8009C363B /* FeedTable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedTable.swift; sourceTree = "<group>"; };
 		AE04F0ECC8ABE19E403DBFD0 /* Pods-Final_ProjectUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Final_ProjectUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Final_ProjectUITests/Pods-Final_ProjectUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		B716AB4B209DB69000B0A1D8 /* ExercisesPlanTable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExercisesPlanTable.swift; sourceTree = "<group>"; };
+		B716AB4D209DEEE100B0A1D8 /* ExercisePlanTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExercisePlanTableCell.swift; sourceTree = "<group>"; };
+		B716AB4F209E058400B0A1D8 /* ExerciseInPlanViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseInPlanViewController.swift; sourceTree = "<group>"; };
 		B7C2551220975C32009CCDFC /* PlansViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlansViewController.swift; sourceTree = "<group>"; };
 		B7C255142097610B009CCDFC /* plansViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = plansViewCell.swift; sourceTree = "<group>"; };
 		B7CB89FA208E204F005364D6 /* Comment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Comment.swift; sourceTree = "<group>"; };
@@ -261,6 +267,9 @@
 				B7C255142097610B009CCDFC /* plansViewCell.swift */,
 				84ADEA79209343F7005E9CF6 /* CommentsForPostViewController.swift */,
 				B7C2551220975C32009CCDFC /* PlansViewController.swift */,
+				B716AB4B209DB69000B0A1D8 /* ExercisesPlanTable.swift */,
+				B716AB4D209DEEE100B0A1D8 /* ExercisePlanTableCell.swift */,
+				B716AB4F209E058400B0A1D8 /* ExerciseInPlanViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -658,6 +667,7 @@
 				84C7DDAC1FFE9A300033EBCC /* UserModelFirebase.swift in Sources */,
 				B7C255152097610B009CCDFC /* plansViewCell.swift in Sources */,
 				F16BD812203F032400FFDBBB /* Utilits.swift in Sources */,
+				B716AB4E209DEEE100B0A1D8 /* ExercisePlanTableCell.swift in Sources */,
 				84EE55BE1FEFF07C00588A61 /* Final_Project.xcdatamodeld in Sources */,
 				847FA3B32092248E001D48AC /* CommentsForPost.swift in Sources */,
 				F1F63FAC200CFC5300EF1236 /* LastUpdateTable.swift in Sources */,
@@ -681,7 +691,9 @@
 				F1F63FAA200CF7A900EF1236 /* Model.swift in Sources */,
 				845F4CD92004D3E500FF6DBA /* ExerciseModelSQLite.swift in Sources */,
 				F1538FC32042E43F0056F39B /* Post.swift in Sources */,
+				B716AB4C209DB69000B0A1D8 /* ExercisesPlanTable.swift in Sources */,
 				843F9F6E1FFCDC68001D1B8C /* User.swift in Sources */,
+				B716AB50209E058400B0A1D8 /* ExerciseInPlanViewController.swift in Sources */,
 				84FB3B0B1FFE46C8009C363B /* FeedTable.swift in Sources */,
 				F19D11D81FF14BD0003AE817 /* RegisterViewController.swift in Sources */,
 				84F84CD81FF986EC000A0ACF /* ExerciseModelFirebase.swift in Sources */,

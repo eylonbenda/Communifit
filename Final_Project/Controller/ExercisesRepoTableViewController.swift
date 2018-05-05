@@ -16,6 +16,7 @@ class ExercisesRepoTableViewController: UITableViewController {
     var row : Int = 0
     var muscleGroupExercises : MuscleGroup?
     var temp : MuscleGroup?
+    var plan : Plan?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -86,9 +87,8 @@ class ExercisesRepoTableViewController: UITableViewController {
         cell.exerciseDescription.text = exercise?.name
         if exercise?.urlImage != nil {
             
-            ModelFilesStore.getImage(name: "exercisesImages/"+(exercise?.name)!, urlStr: (exercise?.urlImage)!, callback: { (image) in
+            ModelFilesStore.getImage(name: "exercisesImages/"+(exercise?.name)!+".png", urlStr: (exercise?.urlImage)!, callback: { (image) in
                 if image != nil {
-                    print("#####check######")
                 cell.exerciseImage.image = image
                 }
             })
@@ -137,6 +137,7 @@ class ExercisesRepoTableViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
         row = indexPath.row
+        exercise = muscleGroupExercises?.exercises[row]
         performSegue(withIdentifier: "showExercise", sender: self)
         
         
@@ -149,6 +150,7 @@ class ExercisesRepoTableViewController: UITableViewController {
             
             let des =  segue.destination as! ExerciseViewController
             des.exercise = exercise
+            des.plan = plan
             
         }
         

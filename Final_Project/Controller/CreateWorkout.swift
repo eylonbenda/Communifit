@@ -11,6 +11,7 @@ import UIKit
 class CreateWorkout: UITableViewController {
     
     var model : ExerciseModelFirebase?
+    var plan : Plan?
     @IBOutlet var tableMuscle: UITableView!
     
     
@@ -109,6 +110,7 @@ class CreateWorkout: UITableViewController {
 
             let des = segue.destination as! ExercisesRepoTableViewController
             des.muscleGroupExercises = muscleGroupObj!
+            des.plan = self.plan
             
 //            des.loadViewIfNeeded()
 //

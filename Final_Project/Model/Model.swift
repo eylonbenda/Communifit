@@ -37,6 +37,7 @@ class ModelNotification {
     static let post = ModelNotificationBase<Post>(name:"PostNotification")
     static let commentsList  = ModelNotificationBase<[Comment]>(name:"CommentsListNotification")
     static let planList = ModelNotificationBase<[Plan]>(name:"PlanListNotification")
+    static let plan = ModelNotificationBase<Plan>(name: "PlanNotification")
     
     
     static func removeObserver(observer:Any){
@@ -223,6 +224,13 @@ class Model {
     
     func addPlanToUser(user : User){
         usermodelFirebase.addTrainPlanToUser(user: user)
+        
+    }
+    
+    func addExerciseToPlan(user : User , planName : String , exercise : Exercise){
+        
+        usermodelFirebase.addExerciseToPlan(user: user, planName: planName, exercise: exercise)
+    
     }
     
     func getPlans (user : User ){

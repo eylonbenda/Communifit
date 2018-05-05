@@ -20,13 +20,23 @@ class ExerciseViewController: UIViewController {
    
     var currentUser : User?
     var exercise : Exercise?
+    var plan : Plan?
     override func viewDidLoad() {
+        
+        
+        
+//        ModelNotification.plan.observe { (plan) in
+//            self.plan = plan
+//            print(self.plan?.planName)
+//        }
         
         super.viewDidLoad()
         let uid = Auth.auth().currentUser?.uid
         Model.instance.getUser(uid: uid!, callback: {(user) in
             self.currentUser = user
         })
+        
+        
         if let exe = exercise {
         execriseName.text = exe.name
         exDesc.text = exe.execDescription
@@ -42,12 +52,52 @@ class ExerciseViewController: UIViewController {
     
     @IBAction func addExcercise(_ sender: Any) {
         
-                if self.currentUser?.myPlans == nil {
-                    //TODO : 1) Create list of plans
-                    //TODO : 2) Add excerise to the plan created
-                    Model.instance.addPlanToUser(user: self.currentUser!)
-                }
-                else{
+        
+        
+        var inputs = [String]()
+        if self.currentUser?.myPlans == nil {
+                    // Create new exe + new members
+                    
+                    
+                    // save to DB
+                    
+        }
+        else{
+                    //self.currentUser
+                    
+                    let alert = UIAlertController(title: "What's your name?", message: nil, preferredStyle: .alert)
+                    alert.addAction(UIAlertAction(title: "Cancel", style: .cancel, handler: nil))
+
+                    alert.addTextField(configurationHandler: { textField in
+                        textField.placeholder = "Number of sets"
+                    })
+                    alert.addTextField(configurationHandler: { textField in
+                        textField.placeholder = "Number of repeats"
+                        
+                        print(textField.text)
+                        
+                    })
+                    alert.addTextField(configurationHandler: { textField in
+                        textField.placeholder = "Rest time"
+                                            })
+
+                    alert.addAction(UIAlertAction(title: "OK", style: .default, handler: { action in
+                        inputs.append (alert.textFields![0].text!)
+                        inputs.append (alert.textFields![1].text!)
+                        inputs.append (alert.textFields![2].text!)
+                        
+                        let exercise1 = Exercise(exercise: self.exercise!, numOfSets: inputs[0], numOfRepeats: inputs[1], numOfRestTime: inputs[2])
+                        
+                        Model.instance.addExerciseToPlan(user: self.currentUser!, planName: (self.plan?.planName)!, exercise: exercise1)
+                        
+                    }))
+
+                    self.present(alert, animated: true)
+                    
+                   
+                    
+                  
+                    
                     /* TODO:
                      ask user if he wants to use the current plan
                      if true :
@@ -59,8 +109,6 @@ class ExerciseViewController: UIViewController {
                      
                      */
                 }
-        
-            performSegue(withIdentifier: "goToAuth", sender: self)
             
     
         
