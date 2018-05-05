@@ -14,21 +14,42 @@ class ExercisesRepoTableViewController: UITableViewController {
     
     var exercise : Exercise?
     var row : Int = 0
-    var muscleGroupExercises = MuscleGroup()
+    var muscleGroupExercises : MuscleGroup?
+    var temp : MuscleGroup?
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         configureTableView()
-        exercisesTable.reloadData()
-       
+        temp = muscleGroupExercises
+        
+        Model.instance.getAllExercises(type: (muscleGroupExercises?.name)!) { (exes) in
+            if exes != nil {
+            self.muscleGroupExercises?.exercises = exes!
+            self.exercisesTable.reloadData()
+            }
+            
+        }
+        
         
 
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
-
-        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        
+        if temp  !== muscleGroupExercises{
+            
+            Model.instance.getAllExercises(type: (muscleGroupExercises?.name)!, callback: { (exercises) in
+                if exercises != nil {
+                self.muscleGroupExercises?.exercises = exercises!
+                self.exercisesTable.reloadData()
+                self.temp = self.muscleGroupExercises
+                }
+            })
+        }
+        
+        
+        
     }
 
     override func didReceiveMemoryWarning() {
@@ -45,7 +66,12 @@ class ExercisesRepoTableViewController: UITableViewController {
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return muscleGroupExercises.exercises.count
+        return (muscleGroupExercises?.exercises.count)!
+    }
+    
+    
+    override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 155.0
     }
     
     
@@ -55,34 +81,46 @@ class ExercisesRepoTableViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         let cell = tableView.dequeueReusableCell(withIdentifier: "exercise_cell", for: indexPath) as! ExercisesRepoCellTableViewCell
-         exercise = muscleGroupExercises.exercises[indexPath.row]
+        exercise = muscleGroupExercises?.exercises[indexPath.row]
         
-        if muscleGroupExercises.name == "Chest" {
-         
-            let url = NSURL(string: (exercise?.urlImage)!)
+        cell.exerciseDescription.text = exercise?.name
+        if exercise?.urlImage != nil {
             
-            URLSession.shared.dataTask(with: url! as URL, completionHandler: { (data, response, error) in
-                
-                if error != nil {
-                    print(error!)
+            ModelFilesStore.getImage(name: "exercisesImages/"+(exercise?.name)!, urlStr: (exercise?.urlImage)!, callback: { (image) in
+                if image != nil {
+                    print("#####check######")
+                cell.exerciseImage.image = image
                 }
-                
-                DispatchQueue.main.async(execute: {
-                    cell.exerciseImage.image = UIImage(data: data!)
-                    cell.exerciseDescription.text = self.exercise?.name
-                })
-                
-            }).resume()
-            
-           
-            
-        } else if muscleGroupExercises.name == "ABS&Core" {
-            
-           
-            
+            })
             
         }
+//
+//        if muscleGroupExercises?.name == "Chest" {
+//
+//            let url = NSURL(string: (exercise?.urlImage)!)
+//
+//            URLSession.shared.dataTask(with: url! as URL, completionHandler: { (data, response, error) in
+//
+//                if error != nil {
+//                    print(error!)
+//                }
+//
+//                DispatchQueue.main.async(execute: {
+//                    cell.exerciseImage.image = UIImage(data: data!)
+//                    cell.exerciseDescription.text = self.exercise?.name
+//                })
+//
+//            }).resume()
         
+           
+//
+//        } else if muscleGroupExercises?.name == "ABS&Core" {
+//
+//
+//
+//
+//        }
+//
         
 
         return cell
@@ -91,7 +129,7 @@ class ExercisesRepoTableViewController: UITableViewController {
     
     func configureTableView(){
         
-        exercisesTable.estimatedRowHeight = 120.0
+        exercisesTable.estimatedRowHeight = 155.0
         exercisesTable.rowHeight =  UITableViewAutomaticDimension
         
     }

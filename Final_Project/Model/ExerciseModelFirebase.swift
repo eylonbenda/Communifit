@@ -20,13 +20,6 @@ class ExerciseModelFirebase  {
         
          ref = Database.database().reference()
         
-//        FirebaseApp.configure()
-//        ref = Database.database().reference()
-//
-//         configure storage Firebase
-//        let storage = Storage.storage()
-//        storageRef = storage.reference()
-        
         
     }
     
@@ -58,6 +51,9 @@ class ExerciseModelFirebase  {
         
     }
     
+    
+    
+    
     func getAllChestExercises(callback : @escaping ([Exercise]?) -> Void){
         
         let myRef = ref?.child("MuscleGroup").child("Chest").child("exercises")
@@ -86,9 +82,9 @@ class ExerciseModelFirebase  {
     
     
     
-    func getAllExercises(callback : @escaping ([Exercise]?) -> Void){
+    func getAllExercises(type : String ,callback : @escaping ([Exercise]?) -> Void){
         
-        let myRef = ref?.child("Exercises")
+        let myRef = ref?.child("MuscleGroup").child(type).child("exercises")
         myRef?.observeSingleEvent(of: .value, with: { (snapshot) in
             
         if let values = snapshot.value as? [String : [String : Any]] {

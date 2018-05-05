@@ -53,13 +53,20 @@ class Model {
    	static let instance = Model()
     
     
-    
+    private lazy var exerciseModelFB = ExerciseModelFirebase()
     private lazy var postModelFB = PostModelFireBase()
     private lazy var usermodelFirebase = UserModelFirebase()
     private lazy var modelSql = ModelSQLite()
     private lazy var annotationModel = AnnotaionModel()
     
     private init(){
+        
+    }
+    
+    
+    func getAllExercises(type : String , callback : @escaping ([Exercise]?) -> Void){
+        
+        exerciseModelFB.getAllExercises(type: type, callback: callback)
         
     }
     

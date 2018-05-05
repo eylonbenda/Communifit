@@ -13,6 +13,8 @@ class CreateWorkout: UITableViewController {
     var model : ExerciseModelFirebase?
     @IBOutlet var tableMuscle: UITableView!
     
+    
+    var muscleGroupObj : MuscleGroup?
     var row : Int = 0
     var muscleGroups = [MuscleGroup]()
     var images = [UIImage(named: "chest"), UIImage(named: "abs"), UIImage(named: "legs"), UIImage(named: "biceps"), UIImage(named: "back")]
@@ -28,11 +30,7 @@ class CreateWorkout: UITableViewController {
         configureTableView()
         tableMuscle.reloadData()
         
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
-
-        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem
+       
     }
     
     
@@ -96,6 +94,7 @@ class CreateWorkout: UITableViewController {
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
          row  = indexPath.row
+        muscleGroupObj = muscleGroups[row]
         print("row \(indexPath.row) was selected")
         performSegue(withIdentifier: "showExercises", sender: self)
         
@@ -109,32 +108,34 @@ class CreateWorkout: UITableViewController {
         if segue.identifier == "showExercises"  {
 
             let des = segue.destination as! ExercisesRepoTableViewController
-            des.loadViewIfNeeded()
-
-            if row == 0 {
-                //load from firebase chest-exercises
-                model?.getAllChestExercises(callback: { (exercises) in
-                    
-                    if let exes = exercises {
-                        
-                        self.muscleGroups[0].exercises = exes
-                        
-                    }
-                })
-                des.muscleGroupExercises = muscleGroups[0]
-
-            } else if row == 1 {
-                des.muscleGroupExercises = muscleGroups[1]
-
-            } else if row == 2 {
-                des.muscleGroupExercises = muscleGroups[2]
-                
-            } else if row == 3 {
-                des.muscleGroupExercises = muscleGroups[3]
-                
-            } else if row == 4 {
-                des.muscleGroupExercises = muscleGroups[4]
-            }
+            des.muscleGroupExercises = muscleGroupObj!
+            
+//            des.loadViewIfNeeded()
+//
+//            if row == 0 {
+//                //load from firebase chest-exercises
+//                model?.getAllChestExercises(callback: { (exercises) in
+//
+//                    if let exes = exercises {
+//
+//                        self.muscleGroups[0].exercises = exes
+//
+//                    }
+//                })
+//                des.muscleGroupExercises = muscleGroups[0]
+//
+//            } else if row == 1 {
+//                des.muscleGroupExercises = muscleGroups[1]
+//
+//            } else if row == 2 {
+//                des.muscleGroupExercises = muscleGroups[2]
+//
+//            } else if row == 3 {
+//                des.muscleGroupExercises = muscleGroups[3]
+//
+//            } else if row == 4 {
+//                des.muscleGroupExercises = muscleGroups[4]
+//            }
         
             
             
