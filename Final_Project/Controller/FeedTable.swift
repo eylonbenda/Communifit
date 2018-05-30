@@ -29,7 +29,7 @@ class FeedTable: UITableViewController , UIImagePickerControllerDelegate , UINav
     override func viewDidLoad() {
         super.viewDidLoad()
         if Auth.auth().currentUser == nil {
-            performSegue(withIdentifier: "goToAuth", sender: self)
+//            performSegue(withIdentifier: "goToAuth", sender: self)
         }
         else {
         let uid = Auth.auth().currentUser?.uid
@@ -40,7 +40,7 @@ class FeedTable: UITableViewController , UIImagePickerControllerDelegate , UINav
             let planTableVC = thirdTab.viewControllers.first as! PlansViewController
             planTableVC.currentUser = self.currentUser
         })
-        
+        }
         ModelNotification.user.observe { (user) in
             
             if user != nil {
@@ -51,7 +51,7 @@ class FeedTable: UITableViewController , UIImagePickerControllerDelegate , UINav
                 
             }
         }
-       
+        
         
         configureTableView()
         
@@ -67,7 +67,7 @@ class FeedTable: UITableViewController , UIImagePickerControllerDelegate , UINav
         Model.instance.getAllPostsAndObserve()
         
         
-        }
+        
         
     }
     
@@ -77,25 +77,22 @@ class FeedTable: UITableViewController , UIImagePickerControllerDelegate , UINav
     
     override func viewDidAppear(_ animated: Bool) {
         
-       // if Auth.auth().currentUser != nil {
-            // User is signed in.
-//            let uid = Auth.auth().currentUser?.uid
-//            Model.instance.getUser(uid: uid!, callback: { (user) in
-//                self.currentUser = user
-//                var secondTab = self.tabBarController?.viewControllers[3] as PlansViewController
-//                secondTab.curre = firstArray
-//            })
+        if Auth.auth().currentUser != nil {
+          //   User is signed in.
+            let uid = Auth.auth().currentUser?.uid
+            Model.instance.getUser(uid: uid!, callback: { (user) in
+                self.currentUser = user
+               
+            })
+            
+        
+            
+        } else {
+            
+            performSegue(withIdentifier: "goToAuth", sender: self)
             
             
-            
-           
-            
-     //   } else {
-            
-       //     performSegue(withIdentifier: "goToAuth", sender: self)
-            
-            
-        //}
+        }
     }
 
     func updateUserConnected(user : User){

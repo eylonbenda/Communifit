@@ -806,7 +806,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PQ4-7X-AY1">
-                                <rect key="frame" x="28" y="458" width="301" height="141"/>
+                                <rect key="frame" x="28" y="458" width="301" height="79"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                 <nil key="textColor"/>
@@ -879,6 +879,22 @@
                                 </state>
                                 <connections>
                                     <action selector="stop:" destination="hE2-VZ-JdJ" eventType="touchUpInside" id="RwR-4W-Em2"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vur-Qk-gHf">
+                                <rect key="frame" x="84" y="559" width="33" height="26"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="back_image"/>
+                                <connections>
+                                    <action selector="prevButton:" destination="hE2-VZ-JdJ" eventType="touchUpInside" id="WSO-h3-WUa"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="w82-1b-iSG">
+                                <rect key="frame" x="258" y="559" width="33" height="26"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="next_image"/>
+                                <connections>
+                                    <action selector="nextButton:" destination="hE2-VZ-JdJ" eventType="touchUpInside" id="HB3-z3-sBd"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -1438,6 +1454,7 @@
     </scenes>
     <resources>
         <image name="avatar 2" width="100" height="100"/>
+        <image name="back_image" width="50" height="50"/>
         <image name="circle-user-7" width="30" height="30"/>
         <image name="dumbbell-7" width="30" height="30"/>
         <image name="home-7" width="30" height="30"/>
@@ -1446,6 +1463,7 @@
         <image name="icon_share" width="20" height="22"/>
         <image name="logo" width="301" height="219"/>
         <image name="muscleGroup" width="150" height="156"/>
+        <image name="next_image" width="50" height="50"/>
         <image name="pin-map-7" width="30" height="30"/>
         <image name="plus" width="960" height="500"/>
     </resources>

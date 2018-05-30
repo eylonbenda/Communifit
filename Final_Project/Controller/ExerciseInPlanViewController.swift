@@ -15,13 +15,20 @@ class ExerciseInPlanViewController: UIViewController {
     var secondsVar = 30
     var timer = Timer()
     var audioPlayer = AVAudioPlayer()
-
+    var exerciseArr = [Exercise]()
+    var currentExe : Int = 0
+    var flag : Bool = false
+    var currentUser : User?
+    var exercise : Exercise?
+    @IBOutlet weak var sets: UILabel!
+    @IBOutlet weak var repeats: UILabel!
     @IBOutlet weak var numberOfSets: UILabel!
     @IBOutlet weak var numberOfRepeats: UILabel!
     @IBOutlet weak var viewYouTube: UIWebView!
     @IBOutlet weak var exDescr: UILabel!
     @IBOutlet weak var seconds: UILabel!
    
+    
    
     @IBOutlet weak var sliderOutlet: UISlider!
     @IBAction func slider(_ sender: UISlider) {
@@ -39,16 +46,35 @@ class ExerciseInPlanViewController: UIViewController {
         secondsVar -= 1
         seconds.text = String(secondsVar) + " seconds"
         if secondsVar == 0 {
-            
             timer.invalidate()
             audioPlayer.play()
-            
             var reps = Int(numberOfRepeats.text!)
             reps = reps!-1
             numberOfRepeats.text = String(reps!)
         }
     }
     
+    @IBAction func nextButton(_ sender: Any) {
+        
+        if exerciseArr.count <= currentExe+1 {
+            // TODO: finish page
+        }
+        else {
+            currentExe = currentExe + 1
+            exercise = exerciseArr[currentExe]
+            viewDidAppear(true)
+        }
+    }
+    
+    @IBAction func prevButton(_ sender: Any) {
+        if currentExe == 0 {
+        }
+        else {
+            currentExe = currentExe - 1
+            exercise = exerciseArr[currentExe]
+            viewDidAppear(true)
+        }
+    }
     @IBOutlet weak var stopOutlet: UIButton!
     @IBAction func stop(_ sender: AnyObject) {
         audioPlayer.stop()
@@ -57,16 +83,6 @@ class ExerciseInPlanViewController: UIViewController {
         sliderOutlet.setValue(30, animated: true)
         seconds.text = "30" + " seconds"
     }
-    
-    
-    
-    
-    @IBOutlet weak var sets: UILabel!
-    
-    @IBOutlet weak var repeats: UILabel!
-    
-     var currentUser : User?
-     var exercise : Exercise?
     
     override func viewDidLoad() {
     super.viewDidLoad()
@@ -78,19 +94,7 @@ class ExerciseInPlanViewController: UIViewController {
             //print error
             
         }
-    if let exe = exercise {
-        numberOfSets.text = exe.numOfSets
-        numberOfRepeats.text = exe.numOfRepeats
-        secondsVar = Int(exe.numOfRestTime!)!
-        
-        seconds.text = exe.numOfRestTime! + " seconds"
-        exDescr.text = exe.execDescription
-        sliderOutlet.setValue(Float(secondsVar), animated: true)
-        let youtubeurl = exe.urlVideo
-        print(youtubeurl)
-        viewYouTube.allowsInlineMediaPlayback = true
-        viewYouTube.loadHTMLString("<iframe width=\"\(viewYouTube.frame.width)\" height=\"\(viewYouTube.frame.height)\" src=\"\(youtubeurl)? &playsline=1\" frameborder=\"0\" gesture=\"media\" allow=\"encrypted-media\" allowfullscreen></iframe>", baseURL: nil)
-        }
+   
 
         // Do any additional setup after loading the view.
     }
@@ -100,6 +104,22 @@ class ExerciseInPlanViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    
+    override func viewDidAppear(_ animated: Bool) {
+        if let exe = exercise {
+            numberOfSets.text = exe.numOfSets
+            numberOfRepeats.text = exe.numOfRepeats
+            secondsVar = Int(exe.numOfRestTime!)!
+            
+            seconds.text = exe.numOfRestTime! + " seconds"
+            exDescr.text = exe.execDescription
+            sliderOutlet.setValue(Float(secondsVar), animated: true)
+            let youtubeurl = exe.urlVideo
+            print(youtubeurl)
+            viewYouTube.allowsInlineMediaPlayback = true
+            viewYouTube.loadHTMLString("<iframe width=\"\(viewYouTube.frame.width)\" height=\"\(viewYouTube.frame.height)\" src=\"\(youtubeurl)? &playsline=1\" frameborder=\"0\" gesture=\"media\" allow=\"encrypted-media\" allowfullscreen></iframe>", baseURL: nil)
+        }
+    }
 
     /*
     // MARK: - Navigation

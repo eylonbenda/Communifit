@@ -13,6 +13,7 @@ class ExercisesPlanTable: UITableViewController {
     
     var plan : Plan?
     var exer : Exercise?
+    var currentExe : Int = 0
     
     
     
@@ -50,6 +51,7 @@ class ExercisesPlanTable: UITableViewController {
 
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        currentExe = indexPath.row
         exer = plan?.exercises[indexPath.row]
         performSegue(withIdentifier: "showExercise", sender: self)
         
@@ -58,11 +60,13 @@ class ExercisesPlanTable: UITableViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "showExercise"  {
             let destVC = segue.destination as? ExerciseInPlanViewController
+            destVC?.exerciseArr = (plan?.exercises)!
             destVC?.exercise = exer
-            
+            destVC?.currentExe = currentExe
         }
     }
     
+
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "exerciseCell", for: indexPath) as! ExercisePlanTableCell
 

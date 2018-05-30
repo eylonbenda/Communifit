@@ -18,6 +18,7 @@ class Post {
     var lastUpdate : Date?
     var postID : String?
     var comments=[Comment]()
+    var likesCount : Int?
     
     init(urlImage : String , description : String? , author : String? ) {
         
@@ -39,6 +40,7 @@ class Post {
     
     init(fromJson : [String : Any]) {
         
+        self.likesCount = fromJson["likesCount"] as? Int
         self.postID = fromJson["postID"] as? String
         self.urlImage = fromJson["urlImage"] as? String
         self.description = fromJson["description"] as? String
@@ -70,6 +72,7 @@ class Post {
         postObj["author"] = self.author
         postObj["postID"] = self.postID
         postObj["lastUpdate"] = ServerValue.timestamp()
+        postObj["likesCount"] = self.likesCount
         //TODO:  ADD USER VALUE
         return postObj
         
