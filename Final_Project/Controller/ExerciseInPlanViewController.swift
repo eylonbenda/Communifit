@@ -60,6 +60,7 @@ class ExerciseInPlanViewController: UIViewController {
             // TODO: finish page
         }
         else {
+            self.stop(self)
             currentExe = currentExe + 1
             exercise = exerciseArr[currentExe]
             viewDidAppear(true)
@@ -70,6 +71,7 @@ class ExerciseInPlanViewController: UIViewController {
         if currentExe == 0 {
         }
         else {
+            self.stop(self)
             currentExe = currentExe - 1
             exercise = exerciseArr[currentExe]
             viewDidAppear(true)
@@ -79,9 +81,14 @@ class ExerciseInPlanViewController: UIViewController {
     @IBAction func stop(_ sender: AnyObject) {
         audioPlayer.stop()
         timer.invalidate()
-        secondsVar = 30
-        sliderOutlet.setValue(30, animated: true)
-        seconds.text = "30" + " seconds"
+        if let exe=exercise{
+            let restTime = exe.numOfRestTime!
+           // let restTime = exe.numOfRestTime! + " seconds"
+            seconds.text = restTime + " seconds"
+            secondsVar = (restTime as NSString).integerValue
+            sliderOutlet.setValue((restTime as NSString).floatValue, animated: true)
+       // seconds.text = "30" + " seconds"
+        }
     }
     
     override func viewDidLoad() {

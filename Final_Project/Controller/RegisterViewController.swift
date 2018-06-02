@@ -61,6 +61,7 @@ class RegisterViewController: UIViewController {
                 self.newUser = User(uid: uid! ,email: self.email.text!, userName: self.userName.text!, fullName: self.fullName.text!, hight: self.hight.text!, wight: self.wight.text!,urlImage : nil)
 //                self.modelUser?.addNewUser(user: self.newUser!)
                 Model.instance.addUser(user: self.newUser!)
+                 ModelNotification.user.post(data: self.newUser!)
                 print("Registration sucsseful!")
                 self.dismiss(animated: true, completion: nil)
                 SVProgressHUD.dismiss()

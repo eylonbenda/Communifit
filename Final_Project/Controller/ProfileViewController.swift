@@ -62,8 +62,7 @@ class ProfileViewController: UIViewController , UIImagePickerControllerDelegate 
             
             ModelFilesStore.getImage(name:(currentUser?.userName)!, urlStr: (currentUser?.urlImage)!, callback: { (profileImage) in
                 self.profileImage.image = profileImage
-            })
-            
+            })            
         } else {
             profileImage.image = UIImage(named: "avatar 2")
         }
