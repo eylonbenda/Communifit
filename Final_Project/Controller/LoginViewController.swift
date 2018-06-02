@@ -34,7 +34,20 @@ class LoginViewController: UIViewController  {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    override func viewWillAppear(_ animated: Bool) {
+        if Auth.auth().currentUser != nil {
+            SVProgressHUD.dismiss()
+            self.dismiss(animated: true, completion: nil)
+            
+        } else {
+            
+            
+        }
+    }
     
+    @IBAction func registerPress(_ sender: Any) {
+         performSegue(withIdentifier: "goToRegister", sender: self)
+    }
     @IBAction func loginPress(_ sender: Any) {
         
        SVProgressHUD.show()
