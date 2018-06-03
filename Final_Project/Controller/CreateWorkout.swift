@@ -35,6 +35,7 @@ class CreateWorkout: UITableViewController {
         
         let imageView = UIImageView(image: backgroundImage)
         imageView.contentMode = .scaleAspectFit
+       
       self.tableMuscle.backgroundView = imageView
         
         

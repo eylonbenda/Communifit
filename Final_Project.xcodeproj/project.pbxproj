@@ -51,6 +51,7 @@
 		B716AB4E209DEEE100B0A1D8 /* ExercisePlanTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B716AB4D209DEEE100B0A1D8 /* ExercisePlanTableCell.swift */; };
 		B716AB50209E058400B0A1D8 /* ExerciseInPlanViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B716AB4F209E058400B0A1D8 /* ExerciseInPlanViewController.swift */; };
 		B716AB58209E1E0900B0A1D8 /* alarm.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B716AB57209E1E0900B0A1D8 /* alarm.mp3 */; };
+		B76E2D0D20C4739800588BBD /* SharedModelFB.swift in Sources */ = {isa = PBXBuildFile; fileRef = B76E2D0C20C4739800588BBD /* SharedModelFB.swift */; };
 		B77B817C20B2F3310096E090 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B77B817B20B2F3310096E090 /* AVFoundation.framework */; };
 		B77B817E20B2F33F0096E090 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B77B817D20B2F33F0096E090 /* SystemConfiguration.framework */; };
 		B7C2551320975C32009CCDFC /* PlansViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7C2551220975C32009CCDFC /* PlansViewController.swift */; };
@@ -148,6 +149,7 @@
 		B716AB4F209E058400B0A1D8 /* ExerciseInPlanViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseInPlanViewController.swift; sourceTree = "<group>"; };
 		B716AB51209E1D0A00B0A1D8 /* analog-watch-alarm_daniel-simion.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "analog-watch-alarm_daniel-simion.mp3"; path = "../../../Downloads/analog-watch-alarm_daniel-simion.mp3"; sourceTree = "<group>"; };
 		B716AB57209E1E0900B0A1D8 /* alarm.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = alarm.mp3; sourceTree = "<group>"; };
+		B76E2D0C20C4739800588BBD /* SharedModelFB.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharedModelFB.swift; sourceTree = "<group>"; };
 		B77B817B20B2F3310096E090 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		B77B817D20B2F33F0096E090 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		B7C2551220975C32009CCDFC /* PlansViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlansViewController.swift; sourceTree = "<group>"; };
@@ -231,6 +233,7 @@
 				84F84CD71FF986EC000A0ACF /* ExerciseModelFirebase.swift */,
 				84C7DDAB1FFE9A300033EBCC /* UserModelFirebase.swift */,
 				F1538FC42042E6BF0056F39B /* PostModelFireBase.swift */,
+				B76E2D0C20C4739800588BBD /* SharedModelFB.swift */,
 				843F9F6D1FFCDC68001D1B8C /* User.swift */,
 				84C03E161FFE7AE300DB9569 /* Plan.swift */,
 				845F4CD42004B15800FF6DBA /* test.m */,
@@ -683,6 +686,7 @@
 				F16BD812203F032400FFDBBB /* Utilits.swift in Sources */,
 				B716AB4E209DEEE100B0A1D8 /* ExercisePlanTableCell.swift in Sources */,
 				84EE55BE1FEFF07C00588A61 /* Final_Project.xcdatamodeld in Sources */,
+				B76E2D0D20C4739800588BBD /* SharedModelFB.swift in Sources */,
 				847FA3B32092248E001D48AC /* CommentsForPost.swift in Sources */,
 				F1F63FAC200CFC5300EF1236 /* LastUpdateTable.swift in Sources */,
 				84B108CC200621F700FC7C80 /* LocalFileStore.swift in Sources */,

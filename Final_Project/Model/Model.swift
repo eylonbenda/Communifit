@@ -88,6 +88,15 @@ class Model {
         postModelFB.addPost(newPost: post)
     }
     
+    
+    func deletePlanFromUser(user:User,planName:Plan){
+        
+        usermodelFirebase.removePlanFromUser(user: user, planName: planName)
+        
+    }
+    
+
+    
     func addCommentToPost(post : Post){
         postModelFB.addCommentForPost(post: post)
     }

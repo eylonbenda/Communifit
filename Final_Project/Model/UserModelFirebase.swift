@@ -122,6 +122,16 @@ class UserModelFirebase  {
         
         
     }
+    
+    func removePlanFromUser(user:User,planName:Plan){
+        
+        let myRef = ref?.child("Users").child(user.uid!).child("myPlans").child(planName.planName!)
+        
+        myRef?.setValue(nil)
+        
+    }
+    
+
    
     func getAllPlans (user : User , callback : @escaping ([Plan]?) -> Void) {
         
