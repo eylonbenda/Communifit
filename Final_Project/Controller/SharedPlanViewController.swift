@@ -29,7 +29,7 @@ class SharedPlanViewController: UIViewController , UITableViewDelegate , UITable
     
     
     
-    
+    var plan : SharedPublicPlan?
     var sharedPlans = [SharedPublicPlan]()
     
     
@@ -37,6 +37,17 @@ class SharedPlanViewController: UIViewController , UITableViewDelegate , UITable
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         
         return sharedPlans.count
+        
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        
+        if plan != nil {
+            
+            sharedPlans.append(plan!)
+        }
+        
+        
         
     }
     
@@ -53,7 +64,7 @@ class SharedPlanViewController: UIViewController , UITableViewDelegate , UITable
         let cell = tableView.dequeueReusableCell(withIdentifier: "sharedPlan", for: indexPath) as! SharedPlanTableViewCell
         
         
-        
+       
         cell.planName.text = sharedPlan.plan?.planName
         
         cell.userName.text = sharedPlan.user?.userName
@@ -91,7 +102,6 @@ class SharedPlanViewController: UIViewController , UITableViewDelegate , UITable
         
         
         
-        
         ModelNotification.sharedPlanList.observe { (sharedPlan) in
             
             
@@ -105,13 +115,13 @@ class SharedPlanViewController: UIViewController , UITableViewDelegate , UITable
                 self.table.reloadData()
                 
                 
-                
             }
-            
             
             
         }
         
+        
+        Model.instance.getAllSharedPlans()
         
         
         

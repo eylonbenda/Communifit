@@ -46,11 +46,11 @@ class SharedModelFB {
         
         
         
-        let myRef = ref?.child("Shared").child(pubPlan.id!)
+        let myRef = ref?.child("Shared").child((pubPlan.plan?.planName)!)
         
         
         
-        myRef?.setValue(pubPlan.toJson())
+        myRef?.setValue(pubPlan)
         
     }
     
@@ -58,11 +58,11 @@ class SharedModelFB {
     
     
     
-    func getAllPlans (pubPlan : SharedPublicPlan , callback : @escaping ([SharedPublicPlan]?) -> Void) {
+    func getAllPlans (  callback : @escaping ([SharedPublicPlan]?) -> Void) {
         
         
         
-        let myRef = ref?.child("Shared").child(pubPlan.id!)
+        let myRef = ref?.child("Shared")
         
         myRef?.observe(.value, with: { (snapshot) in
             

@@ -32,7 +32,16 @@ class SharedPublicPlan {
     
     var likesUserSet = Set<String>()
     
-    
+    init( plan : Plan? , user : User?) {
+        
+        self.id = NSUUID().uuidString
+        
+        self.plan = plan
+        
+        self.user = user
+        
+        self.likesCount = 0
+    }
     
     init(id : String , plan : Plan? , user : User? , likesCount : Int?, likesSet : Set<String>) {
         

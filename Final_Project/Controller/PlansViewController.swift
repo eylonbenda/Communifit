@@ -21,6 +21,7 @@ import Firebase
 class PlansViewController: UIViewController ,  UITableViewDelegate , UITableViewDataSource {
     
     
+    @IBOutlet weak var shareButtom: UIButton!
     
     
     
@@ -74,7 +75,20 @@ class PlansViewController: UIViewController ,  UITableViewDelegate , UITableView
         
     }
     
-    
+    var sharePlan : SharedPublicPlan?
+    @IBAction func sharePress(_ sender: UIButton) {
+        
+       
+        var plan = currentUser?.myPlans[sender.tag]
+        
+        sharePlan = SharedPublicPlan(plan: plan, user: currentUser)
+        Model.instance.addSharedPlan(planShare: sharePlan!)
+        performSegue(withIdentifier: "goToShare", sender: self)
+        
+        
+        
+        
+    }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         
@@ -100,6 +114,13 @@ class PlansViewController: UIViewController ,  UITableViewDelegate , UITableView
             
             
             
+        } else if segue.identifier == "goToShare" {
+            
+            let des = segue.destination as? SharedPlanViewController
+            
+            des?.plan = self.sharePlan
+            
+            
         }
         
         
@@ -121,11 +142,14 @@ class PlansViewController: UIViewController ,  UITableViewDelegate , UITableView
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         
-        
+       
         let cell = tableView.dequeueReusableCell(withIdentifier: "planCell", for: indexPath) as! plansViewCell
         
         let plan = currentUser?.myPlans[indexPath.row]
         
+        
+        cell.shareButtom.tag = indexPath.row
+        cell.shareButtom.addTarget(self, action: #selector(PlansViewController.sharePress(_:)) , for: .touchUpInside)
         cell.planName.text = plan?.planName
         
         

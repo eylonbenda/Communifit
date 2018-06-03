@@ -130,13 +130,15 @@ class Model {
         
     }
     
+    func addSharedPlan(planShare : SharedPublicPlan){
+        
+        sharedPlansModelFB.addPlan(pubPlan: planShare)
+    }
     
-    
-    func getAllSharedPlans(sharedPlan : SharedPublicPlan) {
+    func getAllSharedPlans() {
         
         
-        
-        sharedPlansModelFB.getAllPlans(pubPlan: sharedPlan) { (plans) in
+        sharedPlansModelFB.getAllPlans() { (plans) in
             
             if plans != nil {
                 
