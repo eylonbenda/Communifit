@@ -52,6 +52,7 @@
 		B716AB50209E058400B0A1D8 /* ExerciseInPlanViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B716AB4F209E058400B0A1D8 /* ExerciseInPlanViewController.swift */; };
 		B716AB58209E1E0900B0A1D8 /* alarm.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B716AB57209E1E0900B0A1D8 /* alarm.mp3 */; };
 		B76E2D0D20C4739800588BBD /* SharedModelFB.swift in Sources */ = {isa = PBXBuildFile; fileRef = B76E2D0C20C4739800588BBD /* SharedModelFB.swift */; };
+		B76E2D0F20C47B6800588BBD /* SharedPublicPlan.swift in Sources */ = {isa = PBXBuildFile; fileRef = B76E2D0E20C47B6800588BBD /* SharedPublicPlan.swift */; };
 		B77B817C20B2F3310096E090 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B77B817B20B2F3310096E090 /* AVFoundation.framework */; };
 		B77B817E20B2F33F0096E090 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B77B817D20B2F33F0096E090 /* SystemConfiguration.framework */; };
 		B7C2551320975C32009CCDFC /* PlansViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7C2551220975C32009CCDFC /* PlansViewController.swift */; };
@@ -150,6 +151,7 @@
 		B716AB51209E1D0A00B0A1D8 /* analog-watch-alarm_daniel-simion.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "analog-watch-alarm_daniel-simion.mp3"; path = "../../../Downloads/analog-watch-alarm_daniel-simion.mp3"; sourceTree = "<group>"; };
 		B716AB57209E1E0900B0A1D8 /* alarm.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = alarm.mp3; sourceTree = "<group>"; };
 		B76E2D0C20C4739800588BBD /* SharedModelFB.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharedModelFB.swift; sourceTree = "<group>"; };
+		B76E2D0E20C47B6800588BBD /* SharedPublicPlan.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharedPublicPlan.swift; sourceTree = "<group>"; };
 		B77B817B20B2F3310096E090 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		B77B817D20B2F33F0096E090 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		B7C2551220975C32009CCDFC /* PlansViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlansViewController.swift; sourceTree = "<group>"; };
@@ -251,6 +253,7 @@
 				F175A2672045B61500F9195F /* Annotation.swift */,
 				F175A2692045B92600F9195F /* AnnotationModel.swift */,
 				B7CB89FA208E204F005364D6 /* Comment.swift */,
+				B76E2D0E20C47B6800588BBD /* SharedPublicPlan.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -730,6 +733,7 @@
 				84010ED71FF55899008A4D59 /* WorkoutsVC.swift in Sources */,
 				84BA872A200B752F003079A2 /* FeedTableViewCell.swift in Sources */,
 				8400AB421FF5483100969441 /* Exercise.swift in Sources */,
+				B76E2D0F20C47B6800588BBD /* SharedPublicPlan.swift in Sources */,
 				847FA3B520922597001D48AC /* CommentsForPostCell.swift in Sources */,
 				846254C6208F7C4500942B6A /* NewsFeedTableVC.swift in Sources */,
 				845F4CD72004B84300FF6DBA /* ModelSQLite.swift in Sources */,

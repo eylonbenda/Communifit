@@ -20,7 +20,7 @@ class SharedModelFB {
         
     }
     
-    func addPlan(user : User){
+    func addPlan(pubPlan : SharedPublicPlan){
         
         let myRef = ref?.child("Shared").child(user.uid!).child("Plans")
         // add name of author
