@@ -30,7 +30,6 @@
 		84A0A03D2021F8BC000BCAFF /* User+Sql.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A0A03C2021F8BB000BCAFF /* User+Sql.swift */; };
 		84AA8D7320C48FA800867EB5 /* SharedPlanViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84AA8D7220C48FA800867EB5 /* SharedPlanViewController.swift */; };
 		84AA8D7520C4908400867EB5 /* SharedPlanTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84AA8D7420C4908400867EB5 /* SharedPlanTableViewCell.swift */; };
-		84AA8D7720C4914500867EB5 /* SharedModelFB.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84AA8D7620C4914400867EB5 /* SharedModelFB.swift */; };
 		84ADEA7A209343F7005E9CF6 /* CommentsForPostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84ADEA79209343F7005E9CF6 /* CommentsForPostViewController.swift */; };
 		84B108CC200621F700FC7C80 /* LocalFileStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B108CB200621F700FC7C80 /* LocalFileStore.swift */; };
 		84BA872A200B752F003079A2 /* FeedTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84BA8729200B752F003079A2 /* FeedTableViewCell.swift */; };
@@ -54,13 +53,13 @@
 		B716AB4E209DEEE100B0A1D8 /* ExercisePlanTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B716AB4D209DEEE100B0A1D8 /* ExercisePlanTableCell.swift */; };
 		B716AB50209E058400B0A1D8 /* ExerciseInPlanViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B716AB4F209E058400B0A1D8 /* ExerciseInPlanViewController.swift */; };
 		B716AB58209E1E0900B0A1D8 /* alarm.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B716AB57209E1E0900B0A1D8 /* alarm.mp3 */; };
-		B76E2D0D20C4739800588BBD /* SharedModelFB.swift in Sources */ = {isa = PBXBuildFile; fileRef = B76E2D0C20C4739800588BBD /* SharedModelFB.swift */; };
 		B76E2D0F20C47B6800588BBD /* SharedPublicPlan.swift in Sources */ = {isa = PBXBuildFile; fileRef = B76E2D0E20C47B6800588BBD /* SharedPublicPlan.swift */; };
 		B77B817C20B2F3310096E090 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B77B817B20B2F3310096E090 /* AVFoundation.framework */; };
 		B77B817E20B2F33F0096E090 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B77B817D20B2F33F0096E090 /* SystemConfiguration.framework */; };
 		B7C2551320975C32009CCDFC /* PlansViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7C2551220975C32009CCDFC /* PlansViewController.swift */; };
 		B7C255152097610B009CCDFC /* plansViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7C255142097610B009CCDFC /* plansViewCell.swift */; };
 		B7CB89FB208E204F005364D6 /* Comment.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7CB89FA208E204F005364D6 /* Comment.swift */; };
+		C17533A520C4994F00C82204 /* SharedModelFB.swift in Sources */ = {isa = PBXBuildFile; fileRef = C17533A420C4994F00C82204 /* SharedModelFB.swift */; };
 		F143DD232044577B00DE518F /* post+sql.swift in Sources */ = {isa = PBXBuildFile; fileRef = F143DD222044577B00DE518F /* post+sql.swift */; };
 		F1538FC32042E43F0056F39B /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1538FC22042E43F0056F39B /* Post.swift */; };
 		F1538FC52042E6BF0056F39B /* PostModelFireBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1538FC42042E6BF0056F39B /* PostModelFireBase.swift */; };
@@ -125,7 +124,6 @@
 		84A0A03C2021F8BB000BCAFF /* User+Sql.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "User+Sql.swift"; sourceTree = "<group>"; };
 		84AA8D7220C48FA800867EB5 /* SharedPlanViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharedPlanViewController.swift; sourceTree = "<group>"; };
 		84AA8D7420C4908400867EB5 /* SharedPlanTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharedPlanTableViewCell.swift; sourceTree = "<group>"; };
-		84AA8D7620C4914400867EB5 /* SharedModelFB.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharedModelFB.swift; sourceTree = "<group>"; };
 		84ADEA79209343F7005E9CF6 /* CommentsForPostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentsForPostViewController.swift; sourceTree = "<group>"; };
 		84B108CB200621F700FC7C80 /* LocalFileStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalFileStore.swift; sourceTree = "<group>"; };
 		84BA8729200B752F003079A2 /* FeedTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedTableViewCell.swift; sourceTree = "<group>"; };
@@ -156,7 +154,6 @@
 		B716AB4F209E058400B0A1D8 /* ExerciseInPlanViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseInPlanViewController.swift; sourceTree = "<group>"; };
 		B716AB51209E1D0A00B0A1D8 /* analog-watch-alarm_daniel-simion.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "analog-watch-alarm_daniel-simion.mp3"; path = "../../../Downloads/analog-watch-alarm_daniel-simion.mp3"; sourceTree = "<group>"; };
 		B716AB57209E1E0900B0A1D8 /* alarm.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = alarm.mp3; sourceTree = "<group>"; };
-		B76E2D0C20C4739800588BBD /* SharedModelFB.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharedModelFB.swift; sourceTree = "<group>"; };
 		B76E2D0E20C47B6800588BBD /* SharedPublicPlan.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharedPublicPlan.swift; sourceTree = "<group>"; };
 		B77B817B20B2F3310096E090 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		B77B817D20B2F33F0096E090 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
@@ -164,6 +161,7 @@
 		B7C255142097610B009CCDFC /* plansViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = plansViewCell.swift; sourceTree = "<group>"; };
 		B7CB89FA208E204F005364D6 /* Comment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Comment.swift; sourceTree = "<group>"; };
 		BBAE524F9E6E1DE5BFA81B2B /* Pods-Final_Project.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Final_Project.release.xcconfig"; path = "Pods/Target Support Files/Pods-Final_Project/Pods-Final_Project.release.xcconfig"; sourceTree = "<group>"; };
+		C17533A420C4994F00C82204 /* SharedModelFB.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharedModelFB.swift; sourceTree = "<group>"; };
 		ED7B8594A28F32FAA5B86E5A /* Pods_Final_Project.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Final_Project.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F143DD222044577B00DE518F /* post+sql.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "post+sql.swift"; sourceTree = "<group>"; };
 		F1538FC22042E43F0056F39B /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
@@ -241,7 +239,6 @@
 				84F84CD71FF986EC000A0ACF /* ExerciseModelFirebase.swift */,
 				84C7DDAB1FFE9A300033EBCC /* UserModelFirebase.swift */,
 				F1538FC42042E6BF0056F39B /* PostModelFireBase.swift */,
-				B76E2D0C20C4739800588BBD /* SharedModelFB.swift */,
 				843F9F6D1FFCDC68001D1B8C /* User.swift */,
 				84C03E161FFE7AE300DB9569 /* Plan.swift */,
 				845F4CD42004B15800FF6DBA /* test.m */,
@@ -260,6 +257,7 @@
 				F175A2692045B92600F9195F /* AnnotationModel.swift */,
 				B7CB89FA208E204F005364D6 /* Comment.swift */,
 				B76E2D0E20C47B6800588BBD /* SharedPublicPlan.swift */,
+				C17533A420C4994F00C82204 /* SharedModelFB.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -297,7 +295,6 @@
 				84010ED61FF55899008A4D59 /* WorkoutsVC.swift */,
 				84AA8D7220C48FA800867EB5 /* SharedPlanViewController.swift */,
 				84AA8D7420C4908400867EB5 /* SharedPlanTableViewCell.swift */,
-				84AA8D7620C4914400867EB5 /* SharedModelFB.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -698,7 +695,6 @@
 				F16BD812203F032400FFDBBB /* Utilits.swift in Sources */,
 				B716AB4E209DEEE100B0A1D8 /* ExercisePlanTableCell.swift in Sources */,
 				84EE55BE1FEFF07C00588A61 /* Final_Project.xcdatamodeld in Sources */,
-				B76E2D0D20C4739800588BBD /* SharedModelFB.swift in Sources */,
 				847FA3B32092248E001D48AC /* CommentsForPost.swift in Sources */,
 				F1F63FAC200CFC5300EF1236 /* LastUpdateTable.swift in Sources */,
 				84B108CC200621F700FC7C80 /* LocalFileStore.swift in Sources */,
@@ -746,8 +742,8 @@
 				8400AB421FF5483100969441 /* Exercise.swift in Sources */,
 				B76E2D0F20C47B6800588BBD /* SharedPublicPlan.swift in Sources */,
 				847FA3B520922597001D48AC /* CommentsForPostCell.swift in Sources */,
-				84AA8D7720C4914500867EB5 /* SharedModelFB.swift in Sources */,
 				846254C6208F7C4500942B6A /* NewsFeedTableVC.swift in Sources */,
+				C17533A520C4994F00C82204 /* SharedModelFB.swift in Sources */,
 				845F4CD72004B84300FF6DBA /* ModelSQLite.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -917,10 +913,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 3L28LXF6M8;
+				DEVELOPMENT_TEAM = FBT3F25EZD;
 				INFOPLIST_FILE = Final_Project/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.eylon.FitnessClub;
+				PRODUCT_BUNDLE_IDENTIFIER = com.eylon.FitnessClu;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "Final_Project/Model/Final_Project-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -936,10 +932,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 3L28LXF6M8;
+				DEVELOPMENT_TEAM = FBT3F25EZD;
 				INFOPLIST_FILE = Final_Project/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.eylon.FitnessClub;
+				PRODUCT_BUNDLE_IDENTIFIER = com.eylon.FitnessClu;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "Final_Project/Model/Final_Project-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
