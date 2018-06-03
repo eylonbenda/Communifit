@@ -28,6 +28,9 @@
 		847FA3B32092248E001D48AC /* CommentsForPost.swift in Sources */ = {isa = PBXBuildFile; fileRef = 847FA3B22092248E001D48AC /* CommentsForPost.swift */; };
 		847FA3B520922597001D48AC /* CommentsForPostCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 847FA3B420922597001D48AC /* CommentsForPostCell.swift */; };
 		84A0A03D2021F8BC000BCAFF /* User+Sql.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A0A03C2021F8BB000BCAFF /* User+Sql.swift */; };
+		84AA8D7320C48FA800867EB5 /* SharedPlanViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84AA8D7220C48FA800867EB5 /* SharedPlanViewController.swift */; };
+		84AA8D7520C4908400867EB5 /* SharedPlanTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84AA8D7420C4908400867EB5 /* SharedPlanTableViewCell.swift */; };
+		84AA8D7720C4914500867EB5 /* SharedModelFB.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84AA8D7620C4914400867EB5 /* SharedModelFB.swift */; };
 		84ADEA7A209343F7005E9CF6 /* CommentsForPostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84ADEA79209343F7005E9CF6 /* CommentsForPostViewController.swift */; };
 		84B108CC200621F700FC7C80 /* LocalFileStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B108CB200621F700FC7C80 /* LocalFileStore.swift */; };
 		84BA872A200B752F003079A2 /* FeedTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84BA8729200B752F003079A2 /* FeedTableViewCell.swift */; };
@@ -120,6 +123,9 @@
 		847FA3B22092248E001D48AC /* CommentsForPost.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentsForPost.swift; sourceTree = "<group>"; };
 		847FA3B420922597001D48AC /* CommentsForPostCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentsForPostCell.swift; sourceTree = "<group>"; };
 		84A0A03C2021F8BB000BCAFF /* User+Sql.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "User+Sql.swift"; sourceTree = "<group>"; };
+		84AA8D7220C48FA800867EB5 /* SharedPlanViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharedPlanViewController.swift; sourceTree = "<group>"; };
+		84AA8D7420C4908400867EB5 /* SharedPlanTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharedPlanTableViewCell.swift; sourceTree = "<group>"; };
+		84AA8D7620C4914400867EB5 /* SharedModelFB.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharedModelFB.swift; sourceTree = "<group>"; };
 		84ADEA79209343F7005E9CF6 /* CommentsForPostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentsForPostViewController.swift; sourceTree = "<group>"; };
 		84B108CB200621F700FC7C80 /* LocalFileStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalFileStore.swift; sourceTree = "<group>"; };
 		84BA8729200B752F003079A2 /* FeedTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedTableViewCell.swift; sourceTree = "<group>"; };
@@ -289,6 +295,9 @@
 				84EE55B71FEFF07C00588A61 /* ViewController.swift */,
 				84FB3B081FFE40DE009C363B /* WorkoutsTableViewController.swift */,
 				84010ED61FF55899008A4D59 /* WorkoutsVC.swift */,
+				84AA8D7220C48FA800867EB5 /* SharedPlanViewController.swift */,
+				84AA8D7420C4908400867EB5 /* SharedPlanTableViewCell.swift */,
+				84AA8D7620C4914400867EB5 /* SharedModelFB.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -704,6 +713,7 @@
 				84C03E151FFE56BB00DB9569 /* ExerciseViewController.swift in Sources */,
 				F1E5098D1FF8F92300E4A80C /* ExercisesRepoCellTableViewCell.swift in Sources */,
 				B7C2551320975C32009CCDFC /* PlansViewController.swift in Sources */,
+				84AA8D7520C4908400867EB5 /* SharedPlanTableViewCell.swift in Sources */,
 				F1538FC52042E6BF0056F39B /* PostModelFireBase.swift in Sources */,
 				840FDB1E2020C08600EDEDAC /* UserModelSQL.swift in Sources */,
 				84FB3B071FFE3678009C363B /* ProfileViewController.swift in Sources */,
@@ -732,9 +742,11 @@
 				8400AB441FF5485600969441 /* MuscleGroup.swift in Sources */,
 				84010ED71FF55899008A4D59 /* WorkoutsVC.swift in Sources */,
 				84BA872A200B752F003079A2 /* FeedTableViewCell.swift in Sources */,
+				84AA8D7320C48FA800867EB5 /* SharedPlanViewController.swift in Sources */,
 				8400AB421FF5483100969441 /* Exercise.swift in Sources */,
 				B76E2D0F20C47B6800588BBD /* SharedPublicPlan.swift in Sources */,
 				847FA3B520922597001D48AC /* CommentsForPostCell.swift in Sources */,
+				84AA8D7720C4914500867EB5 /* SharedModelFB.swift in Sources */,
 				846254C6208F7C4500942B6A /* NewsFeedTableVC.swift in Sources */,
 				845F4CD72004B84300FF6DBA /* ModelSQLite.swift in Sources */,
 			);

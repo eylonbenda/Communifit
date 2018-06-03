@@ -11,7 +11,7 @@ import UIKit
 class ExercisesRepoTableViewController: UITableViewController {
     
     @IBOutlet var exercisesTable: UITableView!
-    
+    let backgroundImage = UIImage(named: "background")
     var exercise : Exercise?
     var row : Int = 0
     var muscleGroupExercises : MuscleGroup?
@@ -27,8 +27,16 @@ class ExercisesRepoTableViewController: UITableViewController {
         Model.instance.getAllExercises(type: (muscleGroupExercises?.name)!) { (exes) in
             if exes != nil {
             self.muscleGroupExercises?.exercises = exes!
-            self.exercisesTable.reloadData()
+                let imageView = UIImageView(image: self.backgroundImage)
+                imageView.contentMode = .scaleAspectFill
+                
+                self.exercisesTable.backgroundView = imageView
+                
+                self.exercisesTable.reloadData()
             }
+            
+            
+           
             
         }
         

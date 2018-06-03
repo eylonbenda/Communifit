@@ -34,20 +34,13 @@ class SharedPublicPlan {
         self.likesCount = fromJson["likesCount"] as? Int
         self.likesUserSet = (fromJson["likesSet"] as? Set<String>)!
     
-        }
-        
-        if fromJson["comments"] != nil{
-            let plans  = fromJson["comments"] as! [String: Any]
-            for (_, val) in plans {
-                let temp = val as! [String:Any]
-                let comment = Comment(json: temp)
-                comments.append(comment)
-            }
-        }
-        
-        
-        
-        
-    }
+}
     
 }
+        
+        
+        
+        
+
+    
+
