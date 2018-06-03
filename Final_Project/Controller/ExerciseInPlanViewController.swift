@@ -20,6 +20,7 @@ class ExerciseInPlanViewController: UIViewController {
     var flag : Bool = false
     var currentUser : User?
     var exercise : Exercise?
+    var startIsOn : Bool = false
     @IBOutlet weak var sets: UILabel!
     @IBOutlet weak var repeats: UILabel!
     @IBOutlet weak var numberOfSets: UILabel!
@@ -39,7 +40,11 @@ class ExerciseInPlanViewController: UIViewController {
     
     @IBOutlet weak var startOutlet: UIButton!
     @IBAction func start(_ sender: Any) {
+        if(startIsOn == false &&  seconds.text != "0 seconds"){
+           sliderOutlet.isHidden = true
         timer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(ExerciseInPlanViewController.counter), userInfo: nil, repeats: true)
+            startIsOn = true;
+        }
     }
     
     @objc func counter(){
@@ -79,6 +84,8 @@ class ExerciseInPlanViewController: UIViewController {
     }
     @IBOutlet weak var stopOutlet: UIButton!
     @IBAction func stop(_ sender: AnyObject) {
+        sliderOutlet.isHidden = false
+        startIsOn = false;
         audioPlayer.stop()
         timer.invalidate()
         if let exe=exercise{

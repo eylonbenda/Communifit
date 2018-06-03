@@ -27,6 +27,15 @@ class ExercisesPlanTable: UITableViewController {
 
       
     }
+    @IBOutlet weak var AddExerciseToPlan: UIBarButtonItem!
+    @IBAction func addExercise(_ sender: Any) {
+        
+        
+        performSegue(withIdentifier: "addExe", sender: self)
+        
+    }
+    
+    
     
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 100.0
@@ -63,6 +72,13 @@ class ExercisesPlanTable: UITableViewController {
             destVC?.exerciseArr = (plan?.exercises)!
             destVC?.exercise = exer
             destVC?.currentExe = currentExe
+        }
+        
+        if segue.identifier == "addExe" {
+            
+            let destVC = segue.destination as? CreateWorkout
+            destVC?.plan = plan
+            
         }
     }
     
