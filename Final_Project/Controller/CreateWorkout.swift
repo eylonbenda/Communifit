@@ -30,6 +30,8 @@ class CreateWorkout: UITableViewController {
         
         configureTableView()
         
+
+        
         
         let imageView = UIImageView(image: backgroundImage)
         imageView.contentMode = .scaleAspectFit
@@ -62,7 +64,7 @@ class CreateWorkout: UITableViewController {
         muscles.append(legsMuscle)
         
         let armsShoulders = MuscleGroup()
-        armsShoulders.name = "Arms&Shoudlers"
+        armsShoulders.name = "Arms"
         muscles.append(armsShoulders)
         
         let backMuscle = MuscleGroup()

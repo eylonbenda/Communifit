@@ -25,9 +25,9 @@ class ExerciseInPlanViewController: UIViewController {
     @IBOutlet weak var numberOfSets: UILabel!
     @IBOutlet weak var numberOfRepeats: UILabel!
     @IBOutlet weak var viewYouTube: UIWebView!
-    @IBOutlet weak var exDescr: UILabel!
+    @IBOutlet weak var exDescr2: UILabel!
     @IBOutlet weak var seconds: UILabel!
-   
+    @IBOutlet weak var exDescr: UITextView!
     
    
     @IBOutlet weak var sliderOutlet: UISlider!

@@ -213,7 +213,7 @@ class FeedTable: UITableViewController , UIImagePickerControllerDelegate , UINav
     }
     
    override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 570.0
+        return 538.0
     }
 
     /*

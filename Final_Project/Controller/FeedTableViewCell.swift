@@ -11,11 +11,12 @@ import UIKit
 class FeedTableViewCell: UITableViewCell {
 
     @IBOutlet weak var imageCell: UIImageView!
-    @IBOutlet weak var postDes: UILabel!
+    @IBOutlet weak var postDes2: UILabel!
     @IBOutlet weak var userName: UILabel!
     @IBOutlet weak var authorImage: UIImageView!
     @IBOutlet weak var commentButtom: UIButton!
     
+    @IBOutlet weak var postDes: UITextView!
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
