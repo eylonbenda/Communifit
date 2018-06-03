@@ -13,9 +13,9 @@ class ExerciseViewController: UIViewController {
     
     @IBOutlet weak var execriseName: UILabel!
     @IBOutlet weak var viewYouTube: UIWebView!
-    @IBOutlet weak var exDesc2: UILabel!
+
     @IBOutlet weak var exDesc: UITextView!
-    
+    @IBOutlet weak var addButtom: UIButton!
     
     
   
@@ -24,6 +24,12 @@ class ExerciseViewController: UIViewController {
     var exercise : Exercise?
     var plan : Plan?
     override func viewDidLoad() {
+        
+        if plan?.planName == nil {
+            
+            addButtom.isHidden = true
+            
+        }
         
         
         
@@ -39,6 +45,8 @@ class ExerciseViewController: UIViewController {
         })
         
         
+        
+        
         if let exe = exercise {
         execriseName.text = exe.name
         exDesc.text = exe.execDescription
@@ -49,6 +57,16 @@ class ExerciseViewController: UIViewController {
     
         }
     
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        
+        if plan?.planName == nil {
+            
+            addButtom.isHidden = true
+            
+        }
+        
     }
     
     
