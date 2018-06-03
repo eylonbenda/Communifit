@@ -13,7 +13,7 @@ class CreateWorkout: UITableViewController {
     var model : ExerciseModelFirebase?
     var plan : Plan?
     @IBOutlet var tableMuscle: UITableView!
-    
+    let backgroundImage = UIImage(named: "background")
     
     var muscleGroupObj : MuscleGroup?
     var row : Int = 0
@@ -29,11 +29,23 @@ class CreateWorkout: UITableViewController {
         insertData(&muscleGroups)
         
         configureTableView()
+        
+        
+        let imageView = UIImageView(image: backgroundImage)
+        imageView.contentMode = .scaleAspectFit
+      self.tableMuscle.backgroundView = imageView
+        
+        
+       //tableMuscle.backgroundView=UIView()
         tableMuscle.reloadData()
         
        
     }
     
+    override func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
+         cell.backgroundColor = .clear
+    }
+   
     
     func insertData(_ muscles : inout [MuscleGroup]){
         
@@ -42,11 +54,11 @@ class CreateWorkout: UITableViewController {
         muscles.append(chestMuscle)
         
         let absMuscle = MuscleGroup()
-        absMuscle.name = "ABS&Core"
+        absMuscle.name = "Abs"
         muscles.append(absMuscle)
         
         let legsMuscle = MuscleGroup()
-        legsMuscle.name = "Lower-Body"
+        legsMuscle.name = "Legs"
         muscles.append(legsMuscle)
         
         let armsShoulders = MuscleGroup()

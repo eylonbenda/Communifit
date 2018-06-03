@@ -13,7 +13,8 @@ class ExerciseViewController: UIViewController {
     
     @IBOutlet weak var execriseName: UILabel!
     @IBOutlet weak var viewYouTube: UIWebView!
-    @IBOutlet weak var exDesc: UILabel!
+    @IBOutlet weak var exDesc2: UILabel!
+    @IBOutlet weak var exDesc: UITextView!
     
     
     
