@@ -15,6 +15,7 @@
 		8400AB441FF5485600969441 /* MuscleGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8400AB431FF5485600969441 /* MuscleGroup.swift */; };
 		84010ED71FF55899008A4D59 /* WorkoutsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84010ED61FF55899008A4D59 /* WorkoutsVC.swift */; };
 		840FDB1E2020C08600EDEDAC /* UserModelSQL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840FDB1D2020C08600EDEDAC /* UserModelSQL.swift */; };
+		841BAE1720C5190C000CBA9A /* SharedPlanViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 841BAE1620C5190C000CBA9A /* SharedPlanViewCell.swift */; };
 		843F9F6E1FFCDC68001D1B8C /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843F9F6D1FFCDC68001D1B8C /* User.swift */; };
 		845F4CD22004B0DB00FF6DBA /* libsqlite3.0.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 845F4CD12004B0DB00FF6DBA /* libsqlite3.0.tbd */; };
 		845F4CD52004B15800FF6DBA /* test.m in Sources */ = {isa = PBXBuildFile; fileRef = 845F4CD42004B15800FF6DBA /* test.m */; };
@@ -108,6 +109,7 @@
 		8400AB431FF5485600969441 /* MuscleGroup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MuscleGroup.swift; sourceTree = "<group>"; };
 		84010ED61FF55899008A4D59 /* WorkoutsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutsVC.swift; sourceTree = "<group>"; };
 		840FDB1D2020C08600EDEDAC /* UserModelSQL.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModelSQL.swift; sourceTree = "<group>"; };
+		841BAE1620C5190C000CBA9A /* SharedPlanViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharedPlanViewCell.swift; sourceTree = "<group>"; };
 		843F9F6D1FFCDC68001D1B8C /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		845F4CD12004B0DB00FF6DBA /* libsqlite3.0.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.0.tbd; path = usr/lib/libsqlite3.0.tbd; sourceTree = SDKROOT; };
 		845F4CD32004B15800FF6DBA /* Final_Project-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Final_Project-Bridging-Header.h"; sourceTree = "<group>"; };
@@ -295,6 +297,7 @@
 				84010ED61FF55899008A4D59 /* WorkoutsVC.swift */,
 				84AA8D7220C48FA800867EB5 /* SharedPlanViewController.swift */,
 				84AA8D7420C4908400867EB5 /* SharedPlanTableViewCell.swift */,
+				841BAE1620C5190C000CBA9A /* SharedPlanViewCell.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -723,6 +726,7 @@
 				B716AB50209E058400B0A1D8 /* ExerciseInPlanViewController.swift in Sources */,
 				84FB3B0B1FFE46C8009C363B /* FeedTable.swift in Sources */,
 				F19D11D81FF14BD0003AE817 /* RegisterViewController.swift in Sources */,
+				841BAE1720C5190C000CBA9A /* SharedPlanViewCell.swift in Sources */,
 				84F84CD81FF986EC000A0ACF /* ExerciseModelFirebase.swift in Sources */,
 				F175A26A2045B92600F9195F /* AnnotationModel.swift in Sources */,
 				846254C2208F732E00942B6A /* PostHeaderCell.swift in Sources */,

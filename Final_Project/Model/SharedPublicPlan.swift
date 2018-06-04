@@ -75,7 +75,7 @@ class SharedPublicPlan {
         
         self.likesCount = fromJson["likesCount"] as? Int
         
-        self.likesUserSet = (fromJson["likesSet"] as? Set<String>)!
+//        self.likesUserSet = (fromJson["likesSet"] as? Set<String>)!
         
         
         
@@ -93,9 +93,9 @@ class SharedPublicPlan {
         
         jsonObj["id"] = id
         
-        jsonObj["plan"] = plan
+        jsonObj["plan"] = plan?.planToJson()
         
-        jsonObj["user"] = user
+        jsonObj["user"] = user?.userToJson()
         
         jsonObj["likesCount"] = likesCount
         

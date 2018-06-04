@@ -99,7 +99,7 @@ class SharedPlanViewController: UIViewController , UITableViewDelegate , UITable
         
         table.delegate = self
         
-        
+        configureTableView()
         
         
         ModelNotification.sharedPlanList.observe { (sharedPlan) in
@@ -127,7 +127,6 @@ class SharedPlanViewController: UIViewController , UITableViewDelegate , UITable
         
         
         
-        
         // Do any additional setup after loading the view.
         
     }
@@ -142,7 +141,14 @@ class SharedPlanViewController: UIViewController , UITableViewDelegate , UITable
         
     }
     
-    
+    func configureTableView(){
+        
+        table.estimatedRowHeight = 72.0
+        table.rowHeight =  UITableViewAutomaticDimension
+        
+        
+    }
+   
     
     
     

@@ -32,14 +32,10 @@ class SharedModelFB {
     
     init() {
         
-        
-        
         ref = Database.database().reference()
         
         
-        
     }
-    
     
     
     func addPlan(pubPlan : SharedPublicPlan){
@@ -50,7 +46,7 @@ class SharedModelFB {
         
         
         
-        myRef?.setValue(pubPlan)
+        myRef?.setValue(pubPlan.toJson())
         
     }
     
