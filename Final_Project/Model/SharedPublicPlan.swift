@@ -67,15 +67,11 @@ class SharedPublicPlan {
         
         
         
-        self.id = NSUUID().uuidString
-        
-        self.plan = fromJson["plan"] as? Plan
-        
-        self.user = fromJson["user"] as? User
-        
+        self.id = fromJson["id"] as! String
+        self.plan = Plan(jsonToPlan: fromJson["plan"] as! [String : Any])
+        self.user = User(fromJson: fromJson["user"] as! [String : Any])
         self.likesCount = fromJson["likesCount"] as? Int
-        
-//        self.likesUserSet = (fromJson["likesSet"] as? Set<String>)!
+//      self.likesUserSet = (fromJson["likesSet"] as? Set<String>)!
         
         
         

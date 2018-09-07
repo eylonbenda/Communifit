@@ -21,16 +21,11 @@ class Plan{
         self.planName = planName
     }
     
-    
-    
     init(jsonToPlan : [String : Any]) {
-        
-        
         planName = jsonToPlan["planName"] as? String
         if jsonToPlan["exercises"] != nil{
             let exer = jsonToPlan["exercises"] as! [String:Any]
             for (key,val) in exer {
-            
                 let temp = val as! [String : Any]
                 let exercise = Exercise(fromJson: temp)
                 exercises.append(exercise)

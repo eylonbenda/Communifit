@@ -27,8 +27,8 @@ class SharedPlanViewController: UIViewController , UITableViewDelegate , UITable
     @IBOutlet weak var table: UITableView!
     
     
-    
-    
+    var planUser : Plan?
+    var row : Int?
     var plan : SharedPublicPlan?
     var sharedPlans = [SharedPublicPlan]()
     
@@ -68,17 +68,7 @@ class SharedPlanViewController: UIViewController , UITableViewDelegate , UITable
         cell.planName.text = sharedPlan.plan?.planName
         
         cell.userName.text = sharedPlan.user?.userName
-        
-        
-        
-        //        ModelFilesStore.getImage(name: <#T##String#>, urlStr: <#T##String#>, callback: <#T##(UIImage?) -> Void#>)
-        
-        
-        
-        
-        
-        
-        
+    
         return cell
         
         
@@ -93,40 +83,18 @@ class SharedPlanViewController: UIViewController , UITableViewDelegate , UITable
         
         super.viewDidLoad()
         
-        
-        
         table.dataSource = self
-        
         table.delegate = self
-        
+        //table.allowsSelectionDuringEditing = true
         configureTableView()
-        
-        
         ModelNotification.sharedPlanList.observe { (sharedPlan) in
-            
-            
-            
-            if sharedPlan != nil {
-                
-                
-                
-                self.sharedPlans = sharedPlan!
-                
-                self.table.reloadData()
-                
-                
+        if sharedPlan != nil {
+            self.sharedPlans = sharedPlan!
+            self.table.reloadData()
             }
-            
-            
         }
-        
-        
         Model.instance.getAllSharedPlans()
-        
-        
-        
-        
-        
+  
         // Do any additional setup after loading the view.
         
     }
@@ -142,35 +110,31 @@ class SharedPlanViewController: UIViewController , UITableViewDelegate , UITable
     }
     
     func configureTableView(){
-        
         table.estimatedRowHeight = 72.0
         table.rowHeight =  UITableViewAutomaticDimension
         
         
     }
    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        
+        
+        if segue.identifier == "sharedToExercises" {
+            let des = segue.destination as? ExercisesPlanTable
+            des?.plan = planUser
+        
+    }
+    }
     
     
+        func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+
+        row = indexPath.row
+        planUser = sharedPlans[row!].plan
+        performSegue(withIdentifier: "sharedToExercises", sender: self)
     
-    /*
-     
-     // MARK: - Navigation
-     
-     
-     
-     // In a storyboard-based application, you will often want to do a little preparation before navigation
-     
-     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-     
-     // Get the new view controller using segue.destinationViewController.
-     
-     // Pass the selected object to the new view controller.
-     
-     }
-     
-     */
-    
-    
+        
+    }
     
 }
 

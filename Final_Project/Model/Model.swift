@@ -96,20 +96,10 @@ class ModelNotification {
     
 }
 
-
-
-
-
 class Model {
-    
-    
-    
-    
-    
+  
     static let instance = Model()
-    
-    
-    
+
     private lazy var sharedPlansModelFB = SharedModelFB()
     
     private lazy var exerciseModelFB = ExerciseModelFirebase()
