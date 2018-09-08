@@ -21,6 +21,7 @@
     class SharedPlanTableViewCell: UITableViewCell {
         
         
+        @IBOutlet weak var likesOutlet: UIButton!
         
         @IBOutlet weak var userName: UILabel!
         
@@ -28,11 +29,14 @@
         
         @IBOutlet weak var userImage: UIImageView!
         
+        @IBOutlet weak var likeCounter: UILabel!
+        
+        var checkHasChanged : Bool = false
         
         
         
         
-        
+
         
         override func awakeFromNib() {
             
@@ -42,7 +46,14 @@
             
         }
         
-        
+        func changeLikeAndChange(){
+            if(checkHasChanged == false)
+            {
+                likeCounter.text = String((Int(likeCounter.text!))!+1)
+                checkHasChanged = true
+            }
+            
+        }
         
         override func setSelected(_ selected: Bool, animated: Bool) {
             

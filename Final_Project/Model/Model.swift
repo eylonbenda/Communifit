@@ -137,48 +137,21 @@ class Model {
             }
             
         }
-        
     }
-    
-    
-    
-    
-    
     func getAllExercises(type : String , callback : @escaping ([Exercise]?) -> Void){
-        
-        
-        
         exerciseModelFB.getAllExercises(type: type, callback: callback)
-        
-        
-        
     }
-    
-    
     
     func addAnnotationToDB(annotation : Annotaion){
         
-        
-        
         annotationModel.addAnnotationToFB(annotation: annotation)
         
-        
-        
     }
-    
-    
     
     func getAllAnnotation(callback : @escaping ([Annotaion]?)->Void){
         
-        
-        
         annotationModel.getAllAnnotation(callback: callback)
-        
-        
-        
     }
-    
-    
     
     func addPost(post : Post){
         
@@ -188,42 +161,26 @@ class Model {
         
     }
     
-    
-    
-    
-    
     func deletePlanFromUser(user:User,planName:Plan){
         
         
         
         usermodelFirebase.removePlanFromUser(user: user, planName: planName)
         
-        
-        
     }
-    
-    
-    
-    
-    
-    
-    
+
     func addCommentToPost(post : Post){
         
         postModelFB.addCommentForPost(post: post)
         
     }
-    
-    
-    
+   
     func getPostById(post : Post, callback: @escaping (Post?) -> Void){
         
         postModelFB.getPostByID(uid: post.postID!, callback: callback)
         
     }
-    
-    
-    
+ 
     func getAllCommentsOfPost(post : Post){
         
         postModelFB.getAllCommentsOfPost(uid: post.postID!) { (list) in
@@ -235,19 +192,11 @@ class Model {
             }
             
         }
-        
-        
-        
+    
     }
-    
-    
-    
-    
-    
+
     func getAllPostsAndObserve(){
-        
-        
-        
+
         // get last update date from SQL
         
         let lastUpdateDate = LastUpdateTable.getLastUpdateDate(database: modelSql?.database, table: "POSTS")
@@ -257,9 +206,7 @@ class Model {
             print(lastUpdateDate!)
             
         }
-        
-        
-        
+
         // get all updated records from firebase
         
         postModelFB.getAllPostsAndObserve(lastUpdateDate: lastUpdateDate, callback: { (posts) in
@@ -291,13 +238,7 @@ class Model {
                     }
                     
                 }
-                
             }
-            
-            
-            
-            
-            
             //upadte the last update table
             
             if (lastUpdate != nil){
@@ -311,27 +252,12 @@ class Model {
             //get the complete list from local DB
             
             var totalList = Post.getAllPosts(database: self.modelSql?.database)
-            
-            
-            
-            
-            
-            
-            
-            
-            
             totalList =  totalList.sorted(by:  { (post1, post2) -> Bool in
-                
-                
-                
                 post1.lastUpdate! > post2.lastUpdate!
                 
             })
-            
-            
-            
+
             for post in totalList {
-                
                 print(post.postID)
                 
             }
@@ -347,29 +273,14 @@ class Model {
         
         
     }
-    
-    
-    
-    
-    
-    
-    
     func addUser(user : User){
         
         
         
         usermodelFirebase.addNewUser(user: user)
-        
-        
-        
     }
-    
-    
-    
+ 
     func getUser(uid : String , callback : @escaping (User?) -> Void){
-        
-        
-        
         usermodelFirebase.getUser(uid: uid, callback: callback)
         
         
@@ -385,9 +296,6 @@ class Model {
         usermodelFirebase.getAllUsers(callback: callback)
         
     }
-    
-    
-    
     func getAllUsersAndObserve(){
         
         
@@ -509,11 +417,12 @@ class Model {
             }
             
         }
-        
-        
-        
+
     }
     
+    func updateLikes (sharedPlan : SharedPublicPlan) -> Void{
+        sharedPlansModelFB.updateLikesCount(pubPlan: sharedPlan)
+    }
     
     
 }

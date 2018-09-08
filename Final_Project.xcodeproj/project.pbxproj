@@ -41,7 +41,7 @@
 		84EE55B81FEFF07C00588A61 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84EE55B71FEFF07C00588A61 /* ViewController.swift */; };
 		84EE55BB1FEFF07C00588A61 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84EE55B91FEFF07C00588A61 /* Main.storyboard */; };
 		84EE55BE1FEFF07C00588A61 /* Final_Project.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 84EE55BC1FEFF07C00588A61 /* Final_Project.xcdatamodeld */; };
-		84EE55C01FEFF07C00588A61 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84EE55BF1FEFF07C00588A61 /* Assets.xcassets */; };
+		84EE55C01FEFF07C00588A61 /* `.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84EE55BF1FEFF07C00588A61 /* `.xcassets */; };
 		84EE55C31FEFF07C00588A61 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84EE55C11FEFF07C00588A61 /* LaunchScreen.storyboard */; };
 		84EE55CE1FEFF07C00588A61 /* Final_ProjectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84EE55CD1FEFF07C00588A61 /* Final_ProjectTests.swift */; };
 		84EE55D91FEFF07C00588A61 /* Final_ProjectUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84EE55D81FEFF07C00588A61 /* Final_ProjectUITests.swift */; };
@@ -137,7 +137,7 @@
 		84EE55B71FEFF07C00588A61 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		84EE55BA1FEFF07C00588A61 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		84EE55BD1FEFF07C00588A61 /* Final_Project.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Final_Project.xcdatamodel; sourceTree = "<group>"; };
-		84EE55BF1FEFF07C00588A61 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		84EE55BF1FEFF07C00588A61 /* `.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "`.xcassets"; sourceTree = "<group>"; };
 		84EE55C21FEFF07C00588A61 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		84EE55C41FEFF07C00588A61 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		84EE55C91FEFF07C00588A61 /* Final_ProjectTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Final_ProjectTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -348,7 +348,7 @@
 				8400AB401FF547A300969441 /* View */,
 				8400AB3F1FF5479D00969441 /* Controller */,
 				8400AB3E1FF5479400969441 /* Model */,
-				84EE55BF1FEFF07C00588A61 /* Assets.xcassets */,
+				84EE55BF1FEFF07C00588A61 /* `.xcassets */,
 				84EE55C11FEFF07C00588A61 /* LaunchScreen.storyboard */,
 				84EE55C41FEFF07C00588A61 /* Info.plist */,
 				F19D11D91FF15182003AE817 /* GoogleService-Info.plist */,
@@ -508,7 +508,7 @@
 				F19D11DA1FF15285003AE817 /* GoogleService-Info.plist in Resources */,
 				84EE55C31FEFF07C00588A61 /* LaunchScreen.storyboard in Resources */,
 				B716AB58209E1E0900B0A1D8 /* alarm.mp3 in Resources */,
-				84EE55C01FEFF07C00588A61 /* Assets.xcassets in Resources */,
+				84EE55C01FEFF07C00588A61 /* `.xcassets in Resources */,
 				84EE55BB1FEFF07C00588A61 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

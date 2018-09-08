@@ -45,6 +45,7 @@ class SharedPlanViewController: UIViewController , UITableViewDelegate , UITable
         if plan != nil {
             
             sharedPlans.append(plan!)
+            
         }
         
         
@@ -53,32 +54,31 @@ class SharedPlanViewController: UIViewController , UITableViewDelegate , UITable
     
     
     
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        
-        
-        
-        
-        
-        let sharedPlan = sharedPlans[indexPath.row]
-        
-        let cell = tableView.dequeueReusableCell(withIdentifier: "sharedPlan", for: indexPath) as! SharedPlanTableViewCell
-        
-        
-       
-        cell.planName.text = sharedPlan.plan?.planName
-        
-        cell.userName.text = sharedPlan.user?.userName
     
-        return cell
-        
-        
+    @IBAction func likeClicked(_ sender: UIButton) {
+       
+     
+        Model.instance.updateLikes(sharedPlan: sharedPlans[sender.tag])
+    }
+    
+    func getPlanByRow (index: Int){
         
     }
     
-    
-    
-    
-    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let sharedPlan = sharedPlans[indexPath.row]
+        let cell = tableView.dequeueReusableCell(withIdentifier: "sharedPlan", for: indexPath) as! SharedPlanTableViewCell
+
+        cell.planName.text = sharedPlan.plan?.planName
+        cell.userName.text = sharedPlan.user?.userName
+        cell.likeCounter.text = String(sharedPlan.likesCount!)
+        cell.likesOutlet.tag = indexPath.row
+        cell.likesOutlet.addTarget(self, action: #selector(SharedPlanViewController.likeClicked(_:)) , for: .touchUpInside)
+       
+        return cell
+
+    }
+
     override func viewDidLoad() {
         
         super.viewDidLoad()
@@ -90,6 +90,9 @@ class SharedPlanViewController: UIViewController , UITableViewDelegate , UITable
         ModelNotification.sharedPlanList.observe { (sharedPlan) in
         if sharedPlan != nil {
             self.sharedPlans = sharedPlan!
+            self.sharedPlans = (sharedPlan?.sorted(by: { (sharedPlan1, sharedPlan2) -> Bool in
+                return sharedPlan1.likesCount! > sharedPlan2.likesCount!
+            }))!
             self.table.reloadData()
             }
         }

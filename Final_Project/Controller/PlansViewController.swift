@@ -140,14 +140,9 @@ class PlansViewController: UIViewController ,  UITableViewDelegate , UITableView
     
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        
-        
-       
+
         let cell = tableView.dequeueReusableCell(withIdentifier: "planCell", for: indexPath) as! plansViewCell
-        
         let plan = currentUser?.myPlans[indexPath.row]
-        
-        
         cell.shareButtom.tag = indexPath.row
         cell.shareButtom.addTarget(self, action: #selector(PlansViewController.sharePress(_:)) , for: .touchUpInside)
         cell.planName.text = plan?.planName
@@ -177,14 +172,8 @@ class PlansViewController: UIViewController ,  UITableViewDelegate , UITableView
         
         //self.plansTable.isEditing=true
         
-        
-        
-        
-        
         ModelNotification.planList.observe { (plans) in
-            
-            
-            
+
             if plans != nil {
                 
                 self.currentUser?.myPlans = plans!
@@ -194,19 +183,12 @@ class PlansViewController: UIViewController ,  UITableViewDelegate , UITableView
             }
             
         }
-        
-        
-        
-        
-        
-        
-        
+
         // Do any additional setup after loading the view.
         
     }
     
-    
-    
+
     override func viewDidAppear(_ animated: Bool) {
         
         Model.instance.getPlans(user: currentUser!)

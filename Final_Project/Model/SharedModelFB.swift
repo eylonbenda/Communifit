@@ -39,17 +39,17 @@ class SharedModelFB {
     
     
     func addPlan(pubPlan : SharedPublicPlan){
-        
-        
-        
         let myRef = ref?.child("Shared").child((pubPlan.plan?.planName)!)
-        
-        
-        
         myRef?.setValue(pubPlan.toJson())
         
     }
     
+    func updateLikesCount(pubPlan : SharedPublicPlan) -> Void {
+        let newLikesCount = (pubPlan.likesCount)! + 1
+        let myRef = ref?.child("Shared").child((pubPlan.plan?.planName)!).child("likesCount")
+         myRef?.setValue(newLikesCount)
+        
+    }
     
     
     
