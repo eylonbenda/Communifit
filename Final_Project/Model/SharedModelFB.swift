@@ -51,6 +51,13 @@ class SharedModelFB {
         
     }
     
+    func reduceLikesCount(pubPlan : SharedPublicPlan) -> Void {
+        let newLikesCount = (pubPlan.likesCount)! - 1
+        let myRef = ref?.child("Shared").child((pubPlan.plan?.planName)!).child("likesCount")
+        myRef?.setValue(newLikesCount)
+        
+    }
+    
     
     
     

@@ -58,12 +58,20 @@ class SharedPlanViewController: UIViewController , UITableViewDelegate , UITable
     @IBAction func likeClicked(_ sender: UIButton) {
        
      
-        Model.instance.updateLikes(sharedPlan: sharedPlans[sender.tag])
-    }
-    
-    func getPlanByRow (index: Int){
+       
+        if(sender.currentImage! == UIImage(named: "like")) {
+            
+            sender.setImage(#imageLiteral(resourceName: "like(on)"), for: .normal)
+             Model.instance.updateLikes(sharedPlan: sharedPlans[sender.tag])
+        }
+        else if(sender.currentImage! == UIImage(named: "like(on)")) {
+            
+            sender.setImage(#imageLiteral(resourceName: "like"), for: .normal)
+            Model.instance.reduceLikes(sharedPlan: sharedPlans[sender.tag])
+        }
         
     }
+    
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let sharedPlan = sharedPlans[indexPath.row]

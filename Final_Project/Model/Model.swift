@@ -424,6 +424,10 @@ class Model {
         sharedPlansModelFB.updateLikesCount(pubPlan: sharedPlan)
     }
     
+    func reduceLikes (sharedPlan : SharedPublicPlan) -> Void{
+        sharedPlansModelFB.reduceLikesCount(pubPlan: sharedPlan)
+    }
+    
     
 }
 

@@ -46,14 +46,6 @@
             
         }
         
-        func changeLikeAndChange(){
-            if(checkHasChanged == false)
-            {
-                likeCounter.text = String((Int(likeCounter.text!))!+1)
-                checkHasChanged = true
-            }
-            
-        }
         
         override func setSelected(_ selected: Bool, animated: Bool) {
             
