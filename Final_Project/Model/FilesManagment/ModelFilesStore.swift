@@ -25,6 +25,8 @@ class ModelFilesStore {
        })
    }
     
+    
+    
     static func getImage(name: String , urlStr:String, callback:@escaping (UIImage?)->Void){
         //1. try to get the image from local store
         let url = URL(string: urlStr)

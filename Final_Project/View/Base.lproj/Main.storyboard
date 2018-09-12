@@ -762,7 +762,7 @@
                                 <action selector="LogOutPress:" destination="q0N-CH-e6g" id="vX7-bt-e6I"/>
                             </connections>
                         </barButtonItem>
-                        <barButtonItem key="rightBarButtonItem" systemItem="action" id="Tr2-d4-gtv">
+                        <barButtonItem key="rightBarButtonItem" systemItem="compose" id="Tr2-d4-gtv">
                             <connections>
                                 <action selector="uploadPost:" destination="q0N-CH-e6g" id="Z1x-as-94X"/>
                             </connections>
@@ -1614,7 +1614,7 @@
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="C78-rA-osV"/>
-        <segue reference="nfN-mj-My3"/>
+        <segue reference="z84-xE-On6"/>
         <segue reference="0Ro-Cg-dEL"/>
         <segue reference="Lyf-LC-kH7"/>
     </inferredMetricsTieBreakers>
